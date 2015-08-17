@@ -2688,3 +2688,10 @@ Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bd
 
 
 Started GET "/assets/cat-3826461bffc4b6f321a1278a929198e2b8c382d1d8c8d71298661448f7f63747.jpg" for 127.0.0.1 at 2015-08-17 14:10:48 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-17 14:26:44 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPageController#home as HTML
+  Rendered static_page/home.html.erb within layouts/application (394.9ms)
+Completed 200 OK in 587ms (Views: 553.5ms | ActiveRecord: 0.0ms)
