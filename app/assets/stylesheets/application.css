@@ -13,3 +13,33 @@
  *= require_tree .
  *= require_self
  */
+ h3 {
+
+  color: white;
+ }
+#logo
+{
+  background: black;
+  text-align: center;
+  font: Tahoma;
+  padding: 20px;
+  font: small-caps 40px/40px "Tahoma", serif;
+
+
+}
+#login{
+
+	background: dark-grey;
+	padding: 10px;
+	border-bottom: 2px solid;
+	font: small-caps 40px/40px "Arial", serif;
+	color: white;
+	text-align: left;
+	}
+
+.linki {
+ color: black;
+ text-decoration: none;
+ 
+
+}
