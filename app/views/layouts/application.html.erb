@@ -6,6 +6,9 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
 </head>
+
+
+
 <body>
 
 <% flash.each do |key, value| %>
@@ -14,6 +17,14 @@
     <%= value %>
 </div>
 <% end %>
+<<<<<<< HEAD
+<div id ="logo">
+<h3> Internet Shop :) </h3>
+<!-- <%= image_tag("animals.jpg", :alt => "logo cats") %> -->
+</div>
+<div id ="picture">
+</div>
+=======
 <!--<div id ="logo">
 <h3> Internet Shop :) </h3>
 
@@ -53,18 +64,29 @@
  
 <!--
  
+>>>>>>> origin/nazwaa
 <div id ="login">
 <% if current_user %>
     Welcome <%= current_user.email %> <%= link_to 'Logout', destroy_user_session_path, method: :delete %>
 <% else %>
+<<<<<<< HEAD
+    <%= link_to 'Login   |', new_user_session_path, { :class => "linki" }%>
+     <%= link_to 'Categories   |', products_path, { :class => "linki" }%>
+=======
    
      <%= link_to 'Categories   |', new_user_session_path, { :class => "linki" }%>
+>>>>>>> origin/nazwaa
       <%= link_to 'History   |', new_user_session_path, { :class => "linki" }%>
        <%= link_to 'Cart   |', new_user_session_path, { :class => "linki" }%>
         <%= link_to 'Contact   |', new_user_session_path, { :class => "linki" }%>
 <% end %>
+<<<<<<< HEAD
+</div>
+<body class='<%= controller.controller_name %>'>
+=======
 </div>-->
 
+>>>>>>> origin/nazwaa
 <%= yield %>
 <br />
 <%= link_to image_tag("flag-en.jpg", :alt => "flag eng") , application_en_index_path %>

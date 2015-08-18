@@ -17,16 +17,31 @@
 
   color: white;
  }
+<<<<<<< HEAD
+
+#logo
+=======
  
  
 
 
 /*#logo
+>>>>>>> origin/nazwaa
 {
   background: black;
   text-align: center;
   padding: 20px;
   font: small-caps 40px/40px "Tahoma", serif;
+<<<<<<< HEAD
+}
+}
+#login{
+
+	background: blue;
+	padding: 100px;
+	border-bottom: 200px solid;
+	font: small-caps 2000px/4000px "Arial", serif;
+=======
 
 
 }*/
@@ -120,13 +135,22 @@
 
 	border-bottom: 2px solid;
 	font: small-caps 40px/40px "Arial", serif;
+>>>>>>> origin/nazwaa
 	color: white;
 	text-align: left;
-	}
+}
 
 .linki {
+<<<<<<< HEAD
+	background: white;
+	font-size: 30px;
+	margin-left: 100px;
+ 	color: black;
+ 	text-decoration: none;
+=======
  color: white;
  text-decoration: none;
  
+>>>>>>> origin/nazwaa
 
 }
