@@ -14,12 +14,45 @@
     <%= value %>
 </div>
 <% end %>
-<div id ="logo">
-<h3> Internet Shop :) </h1>
-<!-- <%= image_tag("animals.jpg", :alt => "logo cats") %> -->
-</div>
-<div id ="picture">
-</div>
+<!--<div id ="logo">
+<h3> Internet Shop :) </h3>
+
+</div>-->
+
+<ol>
+    <li><a href="#">Produkty</a>
+      <ul>
+        <li><a href="#">Książki</a></li>
+        <li><a href="#">Elektronika</a></li>
+        <li><a href="#">Samochody</a></li>
+        <li><a href="#">Ubrania</a></li>
+        <li><a href="#">Meble</a></li>
+      </ul>
+    </li>
+	
+    <li><a href="#">dział - 2</a>
+      <ul>
+        <li><a href="#">link - 1</a></li>
+        <li><a href="#">link - 2</a></li>
+        <li><a href="#">link - 3</a></li>
+      </ul>
+    </li>
+	
+    <li><a href="#">dział - 3</a></li>
+	
+    <li><a href="#">dział - 4</a>
+      <ul>
+        <li><a href="#">link - 1</a></li>
+        <li><a href="#">link - 2</a></li>
+        <li><a href="#">link - 3</a></li>
+        <li><a href="#">link - 4</a></li>
+      </ul>
+    </li>
+  </ol>
+
+ 
+<!--
+ 
 <div id ="login">
 <% if current_user %>
     Welcome <%= current_user.email %> <%= link_to 'Logout', destroy_user_session_path, method: :delete %>
@@ -30,7 +63,7 @@
        <%= link_to 'Cart   |', new_user_session_path, { :class => "linki" }%>
         <%= link_to 'Contact   |', new_user_session_path, { :class => "linki" }%>
 <% end %>
-</div>
+</div>-->
 <%= yield %>
 
 </body>
