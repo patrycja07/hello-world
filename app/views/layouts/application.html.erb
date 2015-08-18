@@ -6,6 +6,9 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
 </head>
+
+
+
 <body>
 
 <% flash.each do |key, value| %>
@@ -15,7 +18,7 @@
 </div>
 <% end %>
 <div id ="logo">
-<h3> Internet Shop :) </h1>
+<h3> Internet Shop :) </h3>
 <!-- <%= image_tag("animals.jpg", :alt => "logo cats") %> -->
 </div>
 <div id ="picture">
@@ -25,12 +28,13 @@
     Welcome <%= current_user.email %> <%= link_to 'Logout', destroy_user_session_path, method: :delete %>
 <% else %>
     <%= link_to 'Login   |', new_user_session_path, { :class => "linki" }%>
-     <%= link_to 'Categories   |', new_user_session_path, { :class => "linki" }%>
+     <%= link_to 'Categories   |', products_path, { :class => "linki" }%>
       <%= link_to 'History   |', new_user_session_path, { :class => "linki" }%>
        <%= link_to 'Cart   |', new_user_session_path, { :class => "linki" }%>
         <%= link_to 'Contact   |', new_user_session_path, { :class => "linki" }%>
 <% end %>
 </div>
+<body class='<%= controller.controller_name %>'>
 <%= yield %>
 
 </body>
