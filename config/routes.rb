@@ -1,14 +1,23 @@
 Rails.application.routes.draw do
+  
+  resources :application_en do
+    member do
+      get 'abc'
+    end
+  end
+  resources :say
+  
+  devise_for :views
+  #et 'abc' => 'application_en#abc'
   devise_for :users
-  get 'say/hello'
-
-  get 'say/goodbye'
-
+  
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
   root 'static_page#home'
+  
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
