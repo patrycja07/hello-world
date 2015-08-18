@@ -6602,3 +6602,49 @@ ActionController::RoutingError (No route matches [GET] "/images/cs.jpg"):
   Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
   Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
   Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (60.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-18 15:30:04 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPageController#home as HTML
+  Rendered static_page/home.html.erb within layouts/application (365.5ms)
+Completed 200 OK in 1364ms (Views: 1322.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products.self-27de24bda904910791f54a3ca5c3c177110e6127c1817cfc24b92c618c1921c1.css?body=1" for 127.0.0.1 at 2015-08-18 15:30:05 +0200
+
+
+Started GET "/assets/scaffolds.self-a0ee2fad4160a22a22ffc4d9004fdddf66fc3dcb0cbe11c56bf4fcb1cd0c87dc.css?body=1" for 127.0.0.1 at 2015-08-18 15:30:05 +0200
+
+
+Started GET "/assets/say.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-18 15:30:05 +0200
+
+
+Started GET "/assets/static_page.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-18 15:30:05 +0200
+
+
+Started GET "/assets/application.self-b21699569b1b9b2a5ca63d5e10729f51897e5ede8188c856140857de621eb690.css?body=1" for 127.0.0.1 at 2015-08-18 15:30:05 +0200
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-18 15:30:05 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-18 15:30:05 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-18 15:30:05 +0200
+
+
+Started GET "/assets/products.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-18 15:30:05 +0200
+
+
+Started GET "/assets/say.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-18 15:30:05 +0200
+
+
+Started GET "/assets/static_page.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-18 15:30:05 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-08-18 15:30:05 +0200
+
+
+Started GET "/assets/cat-3826461bffc4b6f321a1278a929198e2b8c382d1d8c8d71298661448f7f63747.jpg" for 127.0.0.1 at 2015-08-18 15:30:05 +0200
