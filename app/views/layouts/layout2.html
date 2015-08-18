@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!<!DOCTYPE html>
 <html>
 <head>
     <title>Demo</title>
@@ -6,9 +6,6 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
 </head>
-
-
-
 <body>
 
 <% flash.each do |key, value| %>
@@ -17,31 +14,23 @@
     <%= value %>
 </div>
 <% end %>
-<<<<<<< HEAD
-<div id ="logo">
-<h3> Internet Shop :) </h3>
-<!-- <%= image_tag("animals.jpg", :alt => "logo cats") %> -->
-</div>
-<div id ="picture">
-</div>
-=======
 <!--<div id ="logo">
 <h3> Internet Shop :) </h3>
 
 </div>-->
 
 <ol>
-    <li><a href="#">Produkty</a>
+    <li><a href="#">Categories</a>
       <ul>
-        <li><a href="#">Książki</a></li>
-        <li><a href="#">Elektronika</a></li>
-        <li><a href="#">Samochody</a></li>
-        <li><a href="#">Ubrania</a></li>
-        <li><a href="#">Meble</a></li>
+        <li><a href="#">Books</a></li>
+        <li><a href="#">Electronics</a></li>
+        <li><a href="#">Cars</a></li>
+        <li><a href="#">Clothes</a></li>
+        <li><a href="#">Furniture</a></li>
       </ul>
     </li>
 	
-    <li><a href="#">dział - 2</a>
+    <li><a href="#">whatever</a>
       <ul>
         <li><a href="#">link - 1</a></li>
         <li><a href="#">link - 2</a></li>
@@ -49,9 +38,9 @@
       </ul>
     </li>
 	
-    <li><a href="#">dział - 3</a></li>
+    <li><a href="#">whatever</a></li>
 	
-    <li><a href="#">dział - 4</a>
+    <li><a href="#">whatever</a>
       <ul>
         <li><a href="#">link - 1</a></li>
         <li><a href="#">link - 2</a></li>
@@ -64,32 +53,21 @@
  
 <!--
  
->>>>>>> origin/nazwaa
 <div id ="login">
 <% if current_user %>
     Welcome <%= current_user.email %> <%= link_to 'Logout', destroy_user_session_path, method: :delete %>
 <% else %>
-<<<<<<< HEAD
-    <%= link_to 'Login   |', new_user_session_path, { :class => "linki" }%>
-     <%= link_to 'Categories   |', products_path, { :class => "linki" }%>
-=======
    
      <%= link_to 'Categories   |', new_user_session_path, { :class => "linki" }%>
->>>>>>> origin/nazwaa
       <%= link_to 'History   |', new_user_session_path, { :class => "linki" }%>
        <%= link_to 'Cart   |', new_user_session_path, { :class => "linki" }%>
         <%= link_to 'Contact   |', new_user_session_path, { :class => "linki" }%>
 <% end %>
-<<<<<<< HEAD
-</div>
-<body class='<%= controller.controller_name %>'>
-=======
 </div>-->
 
->>>>>>> origin/nazwaa
 <%= yield %>
 <br />
-<%= link_to image_tag("flag-en.jpg", :alt => "flag eng") , application_en_index_path %>
+<%= link_to image_tag("flaga-pl.png", :alt => "flag eng"),  root_path %>
 
 </body>
 </html>

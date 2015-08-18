@@ -1,6 +1,7 @@
 class SayController < ApplicationController
   def hello
-  	@time = Time.now
+  
+  	render text: "hello, world"
   end
 
   def goodbye
