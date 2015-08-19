@@ -23,9 +23,11 @@
 </div>
 
 
+
 <ol>
-    <li><a href="/products">Products</a>
-    
+    <li><a href="/users/sign_in">Login</a></li>
+  
+    <li><a href="/all_products/all.html">Categories</a>
       <ul>
         <li><a href="#">Książki</a></li>
         <li><a href="#">Elektronika</a></li>
@@ -35,25 +37,25 @@
       </ul>
     </li>
   
-    <li><a href="#">dział - 2</a>
-      <ul>
-        <li><a href="#">link - 1</a></li>
-        <li><a href="#">link - 2</a></li>
-        <li><a href="#">link - 3</a></li>
-      </ul>
-    </li>
+    <li><a href="/products">Products</a></li>
   
-    <li><a href="#">dział - 3</a></li>
-  
-    <li><a href="#">dział - 4</a>
-      <ul>
-        <li><a href="#">link - 1</a></li>
-        <li><a href="#">link - 2</a></li>
-        <li><a href="#">link - 3</a></li>
-        <li><a href="#">link - 4</a></li>
-      </ul>
-    </li>
+    <li><a href="/users/sign_in">Contact</a></li>
   </ol>
+  <!--
+=======
+
+<div id ="login">
+<% if current_user %>
+    Welcome <%= current_user.email %> <%= link_to 'Logout', destroy_user_session_path, method: :delete %>
+<% else %>
+    <%= link_to 'Login   |', new_user_session_path, { :class => "linki" }%>
+     <%= link_to 'Products   |', products_path, { :class => "linki" }%>
+      <%= link_to 'Categories  |', all_products_path, { :class => "linki" }%>
+       <%= link_to 'Cart   |', new_user_session_path, { :class => "linki" }%>
+        <%= link_to 'Contact   |', new_user_session_path, { :class => "linki" }%>
+<% end %>
+</div>-->
+
 <body class='<%= controller.controller_name %>'>
 <%= yield %>
 

@@ -1,7 +1,6 @@
-<h1>Listing products</h1>
-
+<h1>AllProducts </h1>
 <table>
-<% @products.each do |product| %>
+<% @prod.each do |product| %>
 <tr class="<%= cycle('list_line_odd', 'list_line_even') %>">
 <td>
 <%= image_tag(product.image_url, class: 'list_image') %>
@@ -24,4 +23,3 @@ data: { confirm: 'Are you sure?' } %>
 </table>
 
 <br />
-<%= link_to 'New product', new_product_path %>

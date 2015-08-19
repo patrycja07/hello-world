@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'all_products/all' => 'all_products#all', as: 'all_products'
+
   resources :products
   devise_for :users
 
