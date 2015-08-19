@@ -28,8 +28,8 @@
     Welcome <%= current_user.email %> <%= link_to 'Logout', destroy_user_session_path, method: :delete %>
 <% else %>
     <%= link_to 'Login   |', new_user_session_path, { :class => "linki" }%>
-     <%= link_to 'Categories   |', products_path, { :class => "linki" }%>
-      <%= link_to 'History   |', new_user_session_path, { :class => "linki" }%>
+     <%= link_to 'Products   |', products_path, { :class => "linki" }%>
+      <%= link_to 'Categories  |', new_user_session_path, { :class => "linki" }%>
        <%= link_to 'Cart   |', new_user_session_path, { :class => "linki" }%>
         <%= link_to 'Contact   |', new_user_session_path, { :class => "linki" }%>
 <% end %>
