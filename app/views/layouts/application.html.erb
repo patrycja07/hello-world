@@ -21,19 +21,39 @@
 <h3> Internet Shop :) </h3>
 <!-- <%= image_tag("animals.jpg", :alt => "logo cats") %> -->
 </div>
-<div id ="picture">
-</div>
-<div id ="login">
-<% if current_user %>
-    Welcome <%= current_user.email %> <%= link_to 'Logout', destroy_user_session_path, method: :delete %>
-<% else %>
-    <%= link_to 'Login   |', new_user_session_path, { :class => "linki" }%>
-     <%= link_to 'Products   |', products_path, { :class => "linki" }%>
-      <%= link_to 'Categories  |', new_user_session_path, { :class => "linki" }%>
-       <%= link_to 'Cart   |', new_user_session_path, { :class => "linki" }%>
-        <%= link_to 'Contact   |', new_user_session_path, { :class => "linki" }%>
-<% end %>
-</div>
+
+
+<ol>
+    <li><a href="/products">Products</a>
+    
+      <ul>
+        <li><a href="#">Książki</a></li>
+        <li><a href="#">Elektronika</a></li>
+        <li><a href="#">Samochody</a></li>
+        <li><a href="#">Ubrania</a></li>
+        <li><a href="#">Meble</a></li>
+      </ul>
+    </li>
+  
+    <li><a href="#">dział - 2</a>
+      <ul>
+        <li><a href="#">link - 1</a></li>
+        <li><a href="#">link - 2</a></li>
+        <li><a href="#">link - 3</a></li>
+      </ul>
+    </li>
+  
+    <li><a href="#">dział - 3</a></li>
+  
+    <li><a href="#">dział - 4</a>
+      <ul>
+        <li><a href="#">link - 1</a></li>
+        <li><a href="#">link - 2</a></li>
+        <li><a href="#">link - 3</a></li>
+        <li><a href="#">link - 4</a></li>
+      </ul>
+    </li>
+  </ol>
 <body class='<%= controller.controller_name %>'>
 <%= yield %>
 
