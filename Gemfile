@@ -43,6 +43,7 @@ group :development, :test do
   gem 'spring'
 
   gem 'devise'
+  gem 'carrierwave'
 
 end
 
