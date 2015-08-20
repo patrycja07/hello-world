@@ -44,6 +44,7 @@ group :development, :test do
 
   gem 'devise'
   gem 'carrierwave'
+  gem 'pry', '~> 0.10.1'
 
 end
 
