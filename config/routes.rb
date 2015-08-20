@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
+  get 'meble/index'
+
   get 'all_products/all' => 'all_products#all', as: 'all_products'
   get 'books/all' => 'books#all', as: 'books'
+  get 'elektronika/index' => 'elektronika#index', as: 'elektronika'
   resources :products
   devise_for :users
 

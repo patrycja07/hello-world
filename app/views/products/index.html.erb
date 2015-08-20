@@ -1,4 +1,5 @@
-<h1>Listing products</h1>
+<h1><center>Wszystkie produkty </center></h1>
+
 
 <table>
 <% @products.each do |product| %>
@@ -11,6 +12,7 @@
 <dl>
 <dt><%= product.title %></dt>
 <dd><%= truncate(strip_tags(product.description), length: 80) %></dd>
+<dk><%= product.price %></dk>
 </dl>
 </td>
 <td class="list_actions">

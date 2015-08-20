@@ -15,6 +15,10 @@
   <%= @product.description %>
 </p>
 
+<p>
+  <strong>Photo:</strong>
+  <%= image_tag(@product.avatar_url) if @product.avatar? %>
+</p>
 
 
 <p>

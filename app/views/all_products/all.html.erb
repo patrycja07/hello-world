@@ -1,4 +1,4 @@
-<h1>AllProducts </h1>
+<h1><center>Obrazy </center></h1>
 <table>
 <% @prod.each do |product| %>
 <tr class="<%= cycle('list_line_odd', 'list_line_even') %>">
@@ -10,6 +10,7 @@
 <dl>
 <dt><%= product.title %></dt>
 <dd><%= truncate(strip_tags(product.description), length: 80) %></dd>
+<dt><%= product.price %></dt>
 </dl>
 </td>
 <td class="list_actions">

@@ -18,20 +18,28 @@
  }
 
  .list_description {
- width: 60%;
+ width: 80%;
+ heigh: 80%;
+
 
  dl {
- margin: 70;
+ margin: 50;
  }
 
  dt {
- color: #299;
+ color: #111;
  font-weight: bold;
- font-size: larger;
+ font-size: 18px;
+ }
+
+ dk {
+ color: #111;
+ font-weight: bold;
+ font-size: 13px;
  }
 
  dd {
- margin: 0;
+ margin: 0	;
  }
  }
 
@@ -39,14 +47,14 @@
 
  font-size: x-small;
  text-align: right;
- padding-left: 1em;
+ padding-left: 10px;
  }
 
  .list_line_even {
- background: #e998f8;
+ background: #00099;
  }
 
  .list_line_odd {
- background: #f54378;
+ background: #00099;
  }
 }
