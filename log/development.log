@@ -26170,3 +26170,156 @@ Processing by ProductsController#index as HTML
   [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products"
   Rendered products/index.html.erb within layouts/application (11.7ms)
 Completed 200 OK in 131ms (Views: 130.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-21 12:29:29 +0200
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 142ms (Views: 140.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books/all.html" for 127.0.0.1 at 2015-08-21 12:29:33 +0200
+Processing by BooksController#all as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products" WHERE "products"."category" = ?  [["category", "Ksiazki"]]
+  Rendered books/all.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 131ms (Views: 129.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books/all.html" for 127.0.0.1 at 2015-08-21 12:30:16 +0200
+Processing by BooksController#all as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."category" = ?[0m  [["category", "Ksiazki"]]
+  Rendered books/all.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 275ms (Views: 274.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/books.self-87ade41be4a485606f895f176340b5b773bfe1a1b2699bfef37505e6c9d4e002.css?body=1" for 127.0.0.1 at 2015-08-21 12:30:16 +0200
+
+
+Started GET "/assets/elektronika.self-91240bbb2d72120e16cafc514da0b0bccfe03ced355014255b4f41a3db866681.css?body=1" for 127.0.0.1 at 2015-08-21 12:30:16 +0200
+
+
+Started GET "/assets/meble.self-797a07c2d72a722a847f3b561d80fa92522ce899aab210db5178c6f3b3294780.css?body=1" for 127.0.0.1 at 2015-08-21 12:30:16 +0200
+
+
+Started GET "/elektronika/index.html" for 127.0.0.1 at 2015-08-21 12:30:20 +0200
+Processing by ElektronikaController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE "products"."category" = ?  [["category", "Elektronika"]]
+  Rendered elektronika/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 139ms (Views: 136.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books/all.html" for 127.0.0.1 at 2015-08-21 12:30:25 +0200
+Processing by BooksController#all as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."category" = ?[0m  [["category", "Ksiazki"]]
+  Rendered books/all.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 136ms (Views: 134.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/all_products/all.html" for 127.0.0.1 at 2015-08-21 12:30:28 +0200
+Processing by AllProductsController#all as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE "products"."category" = ?  [["category", "Obraz"]]
+  Rendered all_products/all.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 153ms (Views: 151.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/meble/index" for 127.0.0.1 at 2015-08-21 12:30:32 +0200
+Processing by MebleController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."category" = ?[0m  [["category", "Meble"]]
+  Rendered meble/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 155ms (Views: 153.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-21 12:30:35 +0200
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 148ms (Views: 145.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-21 12:30:51 +0200
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.5ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (18.3ms)
+Completed 200 OK in 173ms (Views: 171.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/meble/index" for 127.0.0.1 at 2015-08-21 12:31:14 +0200
+Processing by MebleController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE "products"."category" = ?  [["category", "Meble"]]
+  Rendered meble/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 202ms (Views: 199.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/meble/index" for 127.0.0.1 at 2015-08-21 12:31:14 +0200
+Processing by MebleController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."category" = ?[0m  [["category", "Meble"]]
+  Rendered meble/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 130ms (Views: 128.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/meble.self-b17bc414213f8715330990d54b38abc98d6c852821458b59cc86a3891dfa3ed8.css?body=1" for 127.0.0.1 at 2015-08-21 12:31:14 +0200
+
+
+Started GET "/books/all.html" for 127.0.0.1 at 2015-08-21 12:31:38 +0200
+Processing by BooksController#all as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products" WHERE "products"."category" = ?  [["category", "Ksiazki"]]
+  Rendered books/all.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 259ms (Views: 257.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books/all.html" for 127.0.0.1 at 2015-08-21 12:31:39 +0200
+Processing by BooksController#all as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."category" = ?[0m  [["category", "Ksiazki"]]
+  Rendered books/all.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 131ms (Views: 130.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/all_products.self-2615289393f4777424fef83649a2e0aef4377ff387ef6fc115ce2c41bb64b319.css?body=1" for 127.0.0.1 at 2015-08-21 12:31:39 +0200
+
+
+Started GET "/assets/books.self-930862896cf634e77b6c2ac48aff484f80463cdd3ca3a84590983ee99485d0f1.css?body=1" for 127.0.0.1 at 2015-08-21 12:31:39 +0200
+
+
+Started GET "/assets/elektronika.self-92628e82594815f7e274a5384f00da8bcca75f1d9244f519f63c354dcd19e049.css?body=1" for 127.0.0.1 at 2015-08-21 12:31:39 +0200
+
+
+Started GET "/elektronika/index.html" for 127.0.0.1 at 2015-08-21 12:31:42 +0200
+Processing by ElektronikaController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE "products"."category" = ?  [["category", "Elektronika"]]
+  Rendered elektronika/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 136ms (Views: 134.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/all_products/all.html" for 127.0.0.1 at 2015-08-21 12:31:44 +0200
+Processing by AllProductsController#all as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."category" = ?[0m  [["category", "Obraz"]]
+  Rendered all_products/all.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 114ms (Views: 112.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/meble/index" for 127.0.0.1 at 2015-08-21 12:31:49 +0200
+Processing by MebleController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE "products"."category" = ?  [["category", "Meble"]]
+  Rendered meble/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 122ms (Views: 119.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-21 12:31:52 +0200
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 147ms (Views: 145.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/kontakt/show" for 127.0.0.1 at 2015-08-21 12:32:03 +0200
+Processing by KontaktController#show as HTML
+  Rendered kontakt/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 119ms (Views: 118.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-08-21 12:32:05 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendered users/shared/_links.html.erb (0.6ms)
+  Rendered users/sessions/new.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 144ms (Views: 128.4ms | ActiveRecord: 0.4ms)

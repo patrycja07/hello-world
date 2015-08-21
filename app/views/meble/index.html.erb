@@ -1,4 +1,5 @@
-<h1><center>Meble</center></h1>
+<h1><center>Meble </center></h1>
+
 
 <table>
 <% @prod.each do |product| %>
@@ -10,11 +11,12 @@
 <td class="list_description">
 <dl>
 <dt><%= product.title %></dt>
-<dd><%= truncate(strip_tags(product.description), length: 40) %></dd>
-<dt><%= product.price %></dt>
-<h4>PROMOCJA: <dr><%= product.price2 %></dr></h4>
+<dd><%= truncate(strip_tags(product.description), length: 80) %></dd>
+<dk><%= product.price %></dk><br />
+<dr><%= ("Promocja: "+product.price2.to_s) if product.price2? %></dr>
 </dl>
 </td>
+
 <td class="list_actions">
 <%= link_to 'Show', product %><br/>
 <%= link_to 'Edit', edit_product_path(product) %><br/>
@@ -26,3 +28,7 @@ data: { confirm: 'Are you sure?' } %>
 </table>
 
 <br />
+<td class="list_button"><center>
+<%= link_to 'New product', new_product_path %>
+</center>
+</td>
