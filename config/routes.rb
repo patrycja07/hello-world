@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'kontakt/show'
+
   get 'meble/index'
 
   get 'all_products/all' => 'all_products#all', as: 'all_products'

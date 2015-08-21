@@ -23144,3 +23144,1460 @@ Completed 200 OK in 175ms (Views: 173.5ms | ActiveRecord: 0.2ms)
 
 
 Started GET "/assets/books.self-74328d825a92c074807df4bc22d08fe2f7f20da75d311034cbd890baec4e3973.css?body=1" for 127.0.0.1 at 2015-08-20 20:42:36 +0200
+
+
+Started GET "/books/all.html" for 127.0.0.1 at 2015-08-20 20:55:09 +0200
+Processing by BooksController#all as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE "products"."category" = ?  [["category", "Ksiazki"]]
+  Rendered books/all.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 113ms (Views: 112.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books/all.html" for 127.0.0.1 at 2015-08-20 20:57:44 +0200
+Processing by BooksController#all as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."category" = ?[0m  [["category", "Ksiazki"]]
+  Rendered books/all.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 148ms (Views: 146.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-e588179e4696171b638ef8074de659e6a06e34732036bb89921d3bba7a0701a3.css?body=1" for 127.0.0.1 at 2015-08-20 20:57:44 +0200
+
+
+Started GET "/books/all.html" for 127.0.0.1 at 2015-08-20 20:58:03 +0200
+Processing by BooksController#all as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE "products"."category" = ?  [["category", "Ksiazki"]]
+  Rendered books/all.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 145ms (Views: 143.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-c9cf05d396d9400872415f8e8b5343dbefe11ab8ae28318ace27f5c78129a579.css?body=1" for 127.0.0.1 at 2015-08-20 20:58:03 +0200
+
+
+Started GET "/books/all.html" for 127.0.0.1 at 2015-08-20 20:58:12 +0200
+Processing by BooksController#all as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."category" = ?[0m  [["category", "Ksiazki"]]
+  Rendered books/all.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 147ms (Views: 145.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-b0e6439d54737b77c00383dc5e7fc01dd1633001cca209331ae89e86d390ae2b.css?body=1" for 127.0.0.1 at 2015-08-20 20:58:12 +0200
+
+
+Started GET "/books/all.html" for 127.0.0.1 at 2015-08-20 20:58:22 +0200
+Processing by BooksController#all as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE "products"."category" = ?  [["category", "Ksiazki"]]
+  Rendered books/all.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 151ms (Views: 149.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-d31ad8cbe7f05a3ff7dd0f172396cb12b4d4122356a54e389498ed301945ab7c.css?body=1" for 127.0.0.1 at 2015-08-20 20:58:23 +0200
+
+
+Started GET "/books/all.html" for 127.0.0.1 at 2015-08-20 20:58:47 +0200
+Processing by BooksController#all as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."category" = ?[0m  [["category", "Ksiazki"]]
+  Rendered books/all.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 140ms (Views: 138.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-9874fcd1b5fe1bfbf0b503796a371de9b411e5a97128034a387248ddaca08b7b.css?body=1" for 127.0.0.1 at 2015-08-20 20:58:47 +0200
+
+
+Started GET "/books/all.html" for 127.0.0.1 at 2015-08-20 20:59:00 +0200
+Processing by BooksController#all as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE "products"."category" = ?  [["category", "Ksiazki"]]
+  Rendered books/all.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 155ms (Views: 153.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-f62e76983c6b6ff11201a3cf71b911445c60b1be62613d8d7203a6ec7cb95312.css?body=1" for 127.0.0.1 at 2015-08-20 20:59:00 +0200
+
+
+Started GET "/books/all.html" for 127.0.0.1 at 2015-08-20 20:59:14 +0200
+Processing by BooksController#all as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."category" = ?[0m  [["category", "Ksiazki"]]
+  Rendered books/all.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 138ms (Views: 136.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-1a04029042822cb8268249bd954d80fe04842996362623fbc15dccd7bc826c8b.css?body=1" for 127.0.0.1 at 2015-08-20 20:59:14 +0200
+
+
+Started GET "/books/all.html" for 127.0.0.1 at 2015-08-20 20:59:26 +0200
+Processing by BooksController#all as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE "products"."category" = ?  [["category", "Ksiazki"]]
+  Rendered books/all.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 143ms (Views: 142.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-2121d2a32da1c68271dd7d247e31a7f4a2c21f9893838132df86da0661e2ea5f.css?body=1" for 127.0.0.1 at 2015-08-20 20:59:26 +0200
+
+
+Started GET "/books/all.html" for 127.0.0.1 at 2015-08-20 20:59:34 +0200
+Processing by BooksController#all as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."category" = ?[0m  [["category", "Ksiazki"]]
+  Rendered books/all.html.erb within layouts/application (16.5ms)
+Completed 200 OK in 130ms (Views: 128.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books/all.html" for 127.0.0.1 at 2015-08-20 21:00:22 +0200
+Processing by BooksController#all as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE "products"."category" = ?  [["category", "Ksiazki"]]
+  Rendered books/all.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 141ms (Views: 139.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-742aee530bf46aa2327bd1e6db167ff7e10eed8657ddedfce5342ece137bc852.css?body=1" for 127.0.0.1 at 2015-08-20 21:00:22 +0200
+
+
+Started GET "/books/all.html" for 127.0.0.1 at 2015-08-20 21:00:30 +0200
+Processing by BooksController#all as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."category" = ?[0m  [["category", "Ksiazki"]]
+  Rendered books/all.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 150ms (Views: 149.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-e50bc87f90e3d60fa1607d9bd2e7278d4f479aac60f8b9ff2be5f381739d6d34.css?body=1" for 127.0.0.1 at 2015-08-20 21:00:30 +0200
+
+
+Started GET "/books/all.html" for 127.0.0.1 at 2015-08-20 21:00:32 +0200
+Processing by BooksController#all as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE "products"."category" = ?  [["category", "Ksiazki"]]
+  Rendered books/all.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 113ms (Views: 111.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books/all.html" for 127.0.0.1 at 2015-08-20 21:00:46 +0200
+Processing by BooksController#all as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."category" = ?[0m  [["category", "Ksiazki"]]
+  Rendered books/all.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 144ms (Views: 142.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-6e86173e62ce9d2698aa435c5038c2770094332df53b0745676741a3bace7047.css?body=1" for 127.0.0.1 at 2015-08-20 21:00:46 +0200
+
+
+Started GET "/books/all.html" for 127.0.0.1 at 2015-08-20 21:00:55 +0200
+Processing by BooksController#all as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE "products"."category" = ?  [["category", "Ksiazki"]]
+  Rendered books/all.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 124ms (Views: 122.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books/all.html" for 127.0.0.1 at 2015-08-20 21:01:03 +0200
+Processing by BooksController#all as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."category" = ?[0m  [["category", "Ksiazki"]]
+  Rendered books/all.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 115ms (Views: 114.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books/all.html" for 127.0.0.1 at 2015-08-20 21:01:11 +0200
+Processing by BooksController#all as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE "products"."category" = ?  [["category", "Ksiazki"]]
+  Rendered books/all.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 147ms (Views: 146.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-36f076d266e4d3882bf02e3781bab1bcc10402c338a3702be64036c7787f29d0.css?body=1" for 127.0.0.1 at 2015-08-20 21:01:11 +0200
+
+
+Started GET "/books/all.html" for 127.0.0.1 at 2015-08-20 21:01:19 +0200
+Processing by BooksController#all as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."category" = ?[0m  [["category", "Ksiazki"]]
+  Rendered books/all.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 143ms (Views: 141.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-56d8a54a8237ebd786f4b96e2e37c4d54da9ae1301eea88c4dd4a6484aad4f40.css?body=1" for 127.0.0.1 at 2015-08-20 21:01:19 +0200
+
+
+Started GET "/books/all.html" for 127.0.0.1 at 2015-08-20 21:01:31 +0200
+Processing by BooksController#all as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE "products"."category" = ?  [["category", "Ksiazki"]]
+  Rendered books/all.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 137ms (Views: 136.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-c8f7a9dedf4daee702a2b9176396efaf9b78d467fffd857d4d492d7e755b0c4c.css?body=1" for 127.0.0.1 at 2015-08-20 21:01:31 +0200
+
+
+Started GET "/books/all.html" for 127.0.0.1 at 2015-08-20 21:01:50 +0200
+Processing by BooksController#all as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."category" = ?[0m  [["category", "Ksiazki"]]
+  Rendered books/all.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 152ms (Views: 150.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-845de9c4d8c3de5354acc69ddf642f67dce76c9e76959aef806c48a657f0983d.css?body=1" for 127.0.0.1 at 2015-08-20 21:01:50 +0200
+
+
+Started GET "/books/all.html" for 127.0.0.1 at 2015-08-20 21:02:01 +0200
+Processing by BooksController#all as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE "products"."category" = ?  [["category", "Ksiazki"]]
+  Rendered books/all.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 136ms (Views: 135.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-2757ec8adda785a4b52460b1f3f1cbbf14d0ac7204d298b5b1df0c49dd8a290f.css?body=1" for 127.0.0.1 at 2015-08-20 21:02:01 +0200
+
+
+Started GET "/books/all.html" for 127.0.0.1 at 2015-08-20 21:02:10 +0200
+Processing by BooksController#all as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."category" = ?[0m  [["category", "Ksiazki"]]
+  Rendered books/all.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 147ms (Views: 145.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-d26065347c74962d2962e39de036878dc43e4d50bb680ed0a32bdf3e5017a932.css?body=1" for 127.0.0.1 at 2015-08-20 21:02:10 +0200
+
+
+Started GET "/books/all.html" for 127.0.0.1 at 2015-08-20 21:02:21 +0200
+Processing by BooksController#all as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE "products"."category" = ?  [["category", "Ksiazki"]]
+  Rendered books/all.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 113ms (Views: 112.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books/all.html" for 127.0.0.1 at 2015-08-20 21:02:29 +0200
+Processing by BooksController#all as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."category" = ?[0m  [["category", "Ksiazki"]]
+  Rendered books/all.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 149ms (Views: 147.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-3e09cb6ce9269e069eb51fc02c39cd3ed672b0cba60ab5d9bc55ccc97f1136b4.css?body=1" for 127.0.0.1 at 2015-08-20 21:02:29 +0200
+
+
+Started GET "/books/all.html" for 127.0.0.1 at 2015-08-20 21:03:48 +0200
+Processing by BooksController#all as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE "products"."category" = ?  [["category", "Ksiazki"]]
+  Rendered books/all.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 133ms (Views: 132.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-1f67a3778bab186d0631fd52af282010d4ff10f888d161437b6f38ffa2d6637a.css?body=1" for 127.0.0.1 at 2015-08-20 21:03:48 +0200
+
+
+Started GET "/books/all.html" for 127.0.0.1 at 2015-08-20 21:04:10 +0200
+Processing by BooksController#all as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."category" = ?[0m  [["category", "Ksiazki"]]
+  Rendered books/all.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 149ms (Views: 147.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-fc41b2c3fd4ee75f4274626e439ecceca7107c7fbcbb6f7e14c2f467987c3d3b.css?body=1" for 127.0.0.1 at 2015-08-20 21:04:10 +0200
+
+
+Started GET "/books/all.html" for 127.0.0.1 at 2015-08-20 21:04:19 +0200
+Processing by BooksController#all as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE "products"."category" = ?  [["category", "Ksiazki"]]
+  Rendered books/all.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 152ms (Views: 150.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-cb2af648a14b612e2f6b892b8cde5afaa048ed90cd0293a4d8cad9f5f4069081.css?body=1" for 127.0.0.1 at 2015-08-20 21:04:19 +0200
+
+
+Started GET "/books/all.html" for 127.0.0.1 at 2015-08-20 21:04:36 +0200
+Processing by BooksController#all as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."category" = ?[0m  [["category", "Ksiazki"]]
+  Rendered books/all.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 138ms (Views: 136.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-93bad36b2d0d0adec64fae419898e6b8c927362647e66ff033916091ab933c1f.css?body=1" for 127.0.0.1 at 2015-08-20 21:04:37 +0200
+
+
+Started GET "/books/all.html" for 127.0.0.1 at 2015-08-20 21:05:10 +0200
+Processing by BooksController#all as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products" WHERE "products"."category" = ?  [["category", "Ksiazki"]]
+  Rendered books/all.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 157ms (Views: 154.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-768bb3e9e6ce9d24ce294ebc31501e72986da3a7466dfca0ac16be5ee1eb67d2.css?body=1" for 127.0.0.1 at 2015-08-20 21:05:10 +0200
+
+
+Started GET "/all_products/all.html" for 127.0.0.1 at 2015-08-20 21:05:14 +0200
+Processing by AllProductsController#all as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."category" = ?[0m  [["category", "Obraz"]]
+  Rendered all_products/all.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 115ms (Views: 113.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/all_products/all.html" for 127.0.0.1 at 2015-08-20 21:05:18 +0200
+Processing by AllProductsController#all as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products" WHERE "products"."category" = ?  [["category", "Obraz"]]
+  Rendered all_products/all.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 118ms (Views: 116.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books/all.html" for 127.0.0.1 at 2015-08-20 21:05:20 +0200
+Processing by BooksController#all as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."category" = ?[0m  [["category", "Ksiazki"]]
+  Rendered books/all.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 122ms (Views: 121.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books/all.html" for 127.0.0.1 at 2015-08-20 21:06:27 +0200
+Processing by BooksController#all as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE "products"."category" = ?  [["category", "Ksiazki"]]
+  Rendered books/all.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 142ms (Views: 140.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-39e8c25e40075729864c6a52639e807ca99319f8d923eda007e31d5c285310bd.css?body=1" for 127.0.0.1 at 2015-08-20 21:06:27 +0200
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-20 21:06:29 +0200
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.5ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (13.6ms)
+Completed 200 OK in 133ms (Views: 131.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-20 21:12:34 +0200
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 126ms (Views: 125.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/b05.git" for 127.0.0.1 at 2015-08-20 21:12:35 +0200
+
+ActionController::RoutingError (No route matches [GET] "/b05.git"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/patrycja/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/patrycja/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/patrycja/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (7.9ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (21.3ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (98.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (29.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (59.0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-20 21:13:13 +0200
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 139ms (Views: 138.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/animals.jpg" for 127.0.0.1 at 2015-08-20 21:13:13 +0200
+
+ActionController::RoutingError (No route matches [GET] "/animals.jpg"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/patrycja/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/patrycja/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/patrycja/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.2ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.4ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (55.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (29.1ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (57.5ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-20 21:15:27 +0200
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 238ms (Views: 236.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/b05.gif" for 127.0.0.1 at 2015-08-20 21:15:28 +0200
+
+ActionController::RoutingError (No route matches [GET] "/b05.gif"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/patrycja/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/patrycja/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/patrycja/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.0ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.4ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (57.7ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (29.6ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (59.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-20 21:15:31 +0200
+Processing by StaticPageController#home as HTML
+  Rendered static_page/home.html.erb within layouts/application (33.5ms)
+Completed 200 OK in 178ms (Views: 176.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/b05.gif" for 127.0.0.1 at 2015-08-20 21:15:31 +0200
+
+ActionController::RoutingError (No route matches [GET] "/b05.gif"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/patrycja/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/patrycja/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/patrycja/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.8ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.9ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.2ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (64.6ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (32.0ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (63.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-20 23:08:17 +0200
+Processing by StaticPageController#home as HTML
+  Rendered static_page/home.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 124ms (Views: 123.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/b05.gif" for 127.0.0.1 at 2015-08-20 23:08:17 +0200
+
+ActionController::RoutingError (No route matches [GET] "/b05.gif"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/patrycja/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/patrycja/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/patrycja/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.0ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.3ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (56.4ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (29.1ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (67.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-20 23:09:58 +0200
+Processing by StaticPageController#home as HTML
+  Rendered static_page/home.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 115ms (Views: 114.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/b05.gif" for 127.0.0.1 at 2015-08-20 23:09:58 +0200
+
+ActionController::RoutingError (No route matches [GET] "/b05.gif"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/patrycja/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/patrycja/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/patrycja/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.2ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.4ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (56.4ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (29.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (58.9ms)
+
+
+Started GET "/assets/b05-111bc60f6eb17ddb94f5eec8070bb5fd935b1bf95f78428126916f50ad5ab217.gif" for 127.0.0.1 at 2015-08-20 23:09:58 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-20 23:10:23 +0200
+Processing by StaticPageController#home as HTML
+  Rendered static_page/home.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 114ms (Views: 113.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/b05.gif" for 127.0.0.1 at 2015-08-20 23:10:23 +0200
+
+ActionController::RoutingError (No route matches [GET] "/b05.gif"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/patrycja/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/patrycja/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/patrycja/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.1ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.4ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (55.1ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (28.7ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (57.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-20 23:10:32 +0200
+Processing by StaticPageController#home as HTML
+  Rendered static_page/home.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 121ms (Views: 120.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/b05.gif" for 127.0.0.1 at 2015-08-20 23:10:32 +0200
+
+ActionController::RoutingError (No route matches [GET] "/b05.gif"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/patrycja/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/patrycja/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/patrycja/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (10.1ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.2ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.2ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.0ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (72.7ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (32.4ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (62.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-20 23:10:56 +0200
+Processing by StaticPageController#home as HTML
+  Rendered static_page/home.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 168ms (Views: 167.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-20 23:12:42 +0200
+Processing by StaticPageController#home as HTML
+  Rendered static_page/home.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 136ms (Views: 135.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-680cb6a1cb98e4ea6c859d50b6210e8aafd29d68f681a03efa85ed7dc293d084.css?body=1" for 127.0.0.1 at 2015-08-20 23:12:42 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-20 23:13:21 +0200
+Processing by StaticPageController#home as HTML
+  Rendered static_page/home.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 148ms (Views: 147.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-b234c3d14f86133d6475b0fbf2a26803074becb97ef14734147bfa8c2fbf24fa.css?body=1" for 127.0.0.1 at 2015-08-20 23:13:21 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-20 23:14:02 +0200
+Processing by StaticPageController#home as HTML
+  Rendered static_page/home.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 147ms (Views: 146.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-0283d15a1774ca7264046f7797842681460b515debc393fce9073c1a009d3347.css?body=1" for 127.0.0.1 at 2015-08-20 23:14:03 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-20 23:16:57 +0200
+Processing by StaticPageController#home as HTML
+  Rendered static_page/home.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 110ms (Views: 109.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-20 23:17:42 +0200
+Processing by StaticPageController#home as HTML
+  Rendered static_page/home.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 119ms (Views: 117.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-20 23:18:07 +0200
+Processing by StaticPageController#home as HTML
+  Rendered static_page/home.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 117ms (Views: 116.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-20 23:18:48 +0200
+Processing by StaticPageController#home as HTML
+  Rendered static_page/home.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 108ms (Views: 106.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-20 23:20:53 +0200
+Processing by StaticPageController#home as HTML
+  Rendered static_page/home.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 147ms (Views: 146.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-bdd553368fc43f438ad8a417747e6ad34a324a7350f596f7e58c566ee66ab77d.css?body=1" for 127.0.0.1 at 2015-08-20 23:20:53 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-20 23:21:42 +0200
+Processing by StaticPageController#home as HTML
+  Rendered static_page/home.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 137ms (Views: 136.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-6f3281a12b943f7aa3cb945a9fc45b4891583bb5429610ceb8ab3ec504f4ba24.css?body=1" for 127.0.0.1 at 2015-08-20 23:21:42 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-20 23:21:52 +0200
+Processing by StaticPageController#home as HTML
+  Rendered static_page/home.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 151ms (Views: 150.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-b87ed5c8243c1dfc344840048e7b585ae858efdcdcbadf2884781cd4b5932160.css?body=1" for 127.0.0.1 at 2015-08-20 23:21:52 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-20 23:22:11 +0200
+Processing by StaticPageController#home as HTML
+  Rendered static_page/home.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 130ms (Views: 128.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-20 23:22:30 +0200
+Processing by StaticPageController#home as HTML
+  Rendered static_page/home.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 122ms (Views: 121.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-20 23:23:01 +0200
+Processing by StaticPageController#home as HTML
+  Rendered static_page/home.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 135ms (Views: 134.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-bce9cc39186ee61e91a012b6e66905830129dfdf614f1dd4405b8439f4a7ecd9.css?body=1" for 127.0.0.1 at 2015-08-20 23:23:01 +0200
+
+
+Started GET "/all_products/all.html" for 127.0.0.1 at 2015-08-20 23:23:07 +0200
+Processing by AllProductsController#all as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."category" = ?[0m  [["category", "Obraz"]]
+  Rendered all_products/all.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 122ms (Views: 121.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-08-20 23:23:13 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendered users/shared/_links.html.erb (0.5ms)
+  Rendered users/sessions/new.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 113ms (Views: 111.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_products/all.html" for 127.0.0.1 at 2015-08-20 23:23:15 +0200
+Processing by AllProductsController#all as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products" WHERE "products"."category" = ?  [["category", "Obraz"]]
+  Rendered all_products/all.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 119ms (Views: 116.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-20 23:23:17 +0200
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.5ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 130ms (Views: 128.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-20 23:24:39 +0200
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 149ms (Views: 148.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-0ad17997e4dc9e610847eb42148e98ae6517c8f72bce78792fb6537fa0f10851.css?body=1" for 127.0.0.1 at 2015-08-20 23:24:40 +0200
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-20 23:24:52 +0200
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (14.8ms)
+Completed 200 OK in 140ms (Views: 138.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-20 23:25:45 +0200
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 155ms (Views: 153.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-406804eeb82cd02800568d289bb8415a76c8f894cf99172e6726605b164b9bda.css?body=1" for 127.0.0.1 at 2015-08-20 23:25:46 +0200
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-20 23:25:56 +0200
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 146ms (Views: 144.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-e8fbe20865027828e0ee26454d38451d20d9606eb02ec6a741599d2dbb7c280b.css?body=1" for 127.0.0.1 at 2015-08-20 23:25:56 +0200
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-20 23:26:07 +0200
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 153ms (Views: 151.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-fcbfb493f882a52eabef46b066e6029a7bd8cf51cd6eab523d7f1a7e6b110bf5.css?body=1" for 127.0.0.1 at 2015-08-20 23:26:07 +0200
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-20 23:26:14 +0200
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.5ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 164ms (Views: 162.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-703892f405706ec1bfb616bcb2a3aaaa8aa4f67926cf1cf5f1e7774490957bac.css?body=1" for 127.0.0.1 at 2015-08-20 23:26:15 +0200
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-20 23:26:23 +0200
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 158ms (Views: 156.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-12e5146e4a4ac0a12cea70b7d361629b55a1909e3ea35324812310622f3fe01c.css?body=1" for 127.0.0.1 at 2015-08-20 23:26:23 +0200
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-20 23:26:34 +0200
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 158ms (Views: 156.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-07abdad6983e46ecb6811c2faa693199a37f3c18f95209b5c1519b14eb9719b9.css?body=1" for 127.0.0.1 at 2015-08-20 23:26:34 +0200
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-20 23:26:45 +0200
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 156ms (Views: 154.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-5abe21d0a9c54b624ec03d9e81a6e1aaf1bcc235c3276c0a271f0c25a2b7eb4d.css?body=1" for 127.0.0.1 at 2015-08-20 23:26:46 +0200
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-20 23:27:41 +0200
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 148ms (Views: 146.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-a62a8ec2876e75e571dae0ae39acc4ec213a0c371269a5295b7973a505d7693c.css?body=1" for 127.0.0.1 at 2015-08-20 23:27:41 +0200
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-20 23:27:49 +0200
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 149ms (Views: 147.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-c520fa96c31067476c19260df1cd39b609352f58282c18be40a920e026bc60df.css?body=1" for 127.0.0.1 at 2015-08-20 23:27:50 +0200
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-20 23:28:29 +0200
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 127ms (Views: 125.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-20 23:30:29 +0200
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 153ms (Views: 151.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-bc4ee174d34c85a6da5c3b002e16f338660c741a13bf18918fb362d708c25017.css?body=1" for 127.0.0.1 at 2015-08-20 23:30:29 +0200
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-20 23:30:55 +0200
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (16.1ms)
+Completed 200 OK in 169ms (Views: 167.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-bfc93b91e6526b4c027b6a931fbd63beeb16f59a8134c64b6d8fbbd10e8f8c1c.css?body=1" for 127.0.0.1 at 2015-08-20 23:30:55 +0200
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-20 23:32:17 +0200
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 121ms (Views: 119.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-20 23:32:29 +0200
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 125ms (Views: 123.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-20 23:32:40 +0200
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.5ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (20.8ms)
+Completed 200 OK in 131ms (Views: 129.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-20 23:32:49 +0200
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 117ms (Views: 116.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-20 23:33:15 +0200
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 156ms (Views: 155.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-206cd136dc3a9a03311961e26871fd3e5aadfe5b662e07e118d779c2f9c8c92f.css?body=1" for 127.0.0.1 at 2015-08-20 23:33:15 +0200
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-20 23:33:26 +0200
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 149ms (Views: 147.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-dd4e39ab4ddaa40854431d1437b6eb60b27a6edd8e64437f7ac601f44d836766.css?body=1" for 127.0.0.1 at 2015-08-20 23:33:27 +0200
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-20 23:33:38 +0200
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 123ms (Views: 122.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-20 23:33:44 +0200
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.5ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (13.8ms)
+Completed 200 OK in 142ms (Views: 139.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-20 23:35:47 +0200
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 146ms (Views: 144.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-8acd73549361a151ff52e48c4e00c5f2eae246f0c5183de9589e5ee088cef2b2.css?body=1" for 127.0.0.1 at 2015-08-20 23:35:47 +0200
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-20 23:36:58 +0200
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 160ms (Views: 158.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-65b32c93e92db440c0bc469687231de270fe8032a4817ebcfb126724bdea4265.css?body=1" for 127.0.0.1 at 2015-08-20 23:36:58 +0200
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-20 23:37:07 +0200
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 122ms (Views: 120.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books/all.html" for 127.0.0.1 at 2015-08-20 23:37:09 +0200
+Processing by BooksController#all as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."category" = ?[0m  [["category", "Ksiazki"]]
+  Rendered books/all.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 121ms (Views: 120.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-08-20 23:37:12 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendered users/shared/_links.html.erb (0.5ms)
+  Rendered users/sessions/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 126ms (Views: 124.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-08-20 23:38:06 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendered users/shared/_links.html.erb (0.5ms)
+  Rendered users/sessions/new.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 144ms (Views: 142.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-fe00e5cd85a826dc6272f0816e341403ba06d1b32f7fd75cab28fe55cf00136e.css?body=1" for 127.0.0.1 at 2015-08-20 23:38:06 +0200
+
+
+Started GET "/elektronika/index.html" for 127.0.0.1 at 2015-08-20 23:38:10 +0200
+Processing by ElektronikaController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE "products"."category" = ?  [["category", "Elektronika"]]
+  Rendered elektronika/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 122ms (Views: 120.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/elektronika/index.html" for 127.0.0.1 at 2015-08-20 23:38:23 +0200
+Processing by ElektronikaController#index as HTML
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."category" = ?[0m  [["category", "Elektronika"]]
+  Rendered elektronika/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 137ms (Views: 135.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.self-a6a524e60883a3f01e89ededdeac41d5593b25b4238964a4ef36713a52831c32.css?body=1" for 127.0.0.1 at 2015-08-20 23:38:23 +0200
+
+
+Started GET "/elektronika/index.html" for 127.0.0.1 at 2015-08-20 23:38:40 +0200
+Processing by ElektronikaController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE "products"."category" = ?  [["category", "Elektronika"]]
+  Rendered elektronika/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 144ms (Views: 142.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-dc56877543780b2c487c45650d703a48c7324da1d65867800cc6461487c74034.css?body=1" for 127.0.0.1 at 2015-08-20 23:38:40 +0200
+
+
+Started GET "/elektronika/index.html" for 127.0.0.1 at 2015-08-20 23:38:42 +0200
+Processing by ElektronikaController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."category" = ?[0m  [["category", "Elektronika"]]
+  Rendered elektronika/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 131ms (Views: 128.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/elektronika/index.html" for 127.0.0.1 at 2015-08-20 23:39:28 +0200
+Processing by ElektronikaController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products" WHERE "products"."category" = ?  [["category", "Elektronika"]]
+  Rendered elektronika/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 158ms (Views: 156.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-2c62ab3b66ca379a548903e3d174f01bee8067216271568d004dacf9cc4c4e20.css?body=1" for 127.0.0.1 at 2015-08-20 23:39:28 +0200
+
+
+Started GET "/elektronika/index.html" for 127.0.0.1 at 2015-08-20 23:39:56 +0200
+Processing by ElektronikaController#index as HTML
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."category" = ?[0m  [["category", "Elektronika"]]
+  Rendered elektronika/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 150ms (Views: 149.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.self-75ed6958806b5ac0b7804b89de6c338d9230f41dac9fd2ecc455fc179356ae63.css?body=1" for 127.0.0.1 at 2015-08-20 23:39:56 +0200
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-20 23:40:02 +0200
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 122ms (Views: 120.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-08-20 23:40:14 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendered users/shared/_links.html.erb (0.5ms)
+  Rendered users/sessions/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 122ms (Views: 119.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-20 23:40:24 +0200
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 130ms (Views: 128.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-20 23:43:21 +0200
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 176ms (Views: 174.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/products.self-0e3ab9bb9a13ec720db9cee7662d955cf36b5423c6f9b2a6c7767492c6db0675.css?body=1" for 127.0.0.1 at 2015-08-20 23:43:21 +0200
+
+
+Started GET "/products/new" for 127.0.0.1 at 2015-08-20 23:43:25 +0200
+Processing by ProductsController#new as HTML
+  Rendered products/_form.html.erb (6.0ms)
+  Rendered products/new.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 131ms (Views: 129.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-20 23:43:30 +0200
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.5ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 124ms (Views: 121.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-20 23:44:57 +0200
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 174ms (Views: 173.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/products.self-4c57beaace745cc33933b4cc0f5ae184ff8be42a76b65bc122e70d89a47496cb.css?body=1" for 127.0.0.1 at 2015-08-20 23:44:57 +0200
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-20 23:45:07 +0200
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 118ms (Views: 116.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2015-08-20 23:45:11 +0200
+Processing by ProductsController#new as HTML
+  Rendered products/_form.html.erb (4.2ms)
+  Rendered products/new.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 117ms (Views: 115.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2015-08-20 23:45:57 +0200
+Processing by ProductsController#new as HTML
+  Rendered products/_form.html.erb (5.9ms)
+  Rendered products/new.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 189ms (Views: 187.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products.self-8b6bbf7b3d80e986bb2d01da221d3ec5914bdd7ab2306fefc5403ce9fabe1498.css?body=1" for 127.0.0.1 at 2015-08-20 23:45:57 +0200
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-20 23:46:03 +0200
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 117ms (Views: 115.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-20 23:48:59 +0200
+Processing by StaticPageController#home as HTML
+  Rendered static_page/home.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 124ms (Views: 123.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_products/all.html" for 127.0.0.1 at 2015-08-20 23:52:02 +0200
+Processing by AllProductsController#all as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."category" = ?[0m  [["category", "Obraz"]]
+  Rendered all_products/all.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 122ms (Views: 120.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-08-20 23:57:01 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendered users/shared/_links.html.erb (0.5ms)
+  Rendered users/sessions/new.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 110ms (Views: 108.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_products/all.html" for 127.0.0.1 at 2015-08-20 23:57:20 +0200
+Processing by AllProductsController#all as HTML
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products" WHERE "products"."category" = ?  [["category", "Obraz"]]
+  Rendered all_products/all.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 120ms (Views: 118.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/meble/index" for 127.0.0.1 at 2015-08-20 23:57:25 +0200
+Processing by MebleController#index as HTML
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."category" = ?[0m  [["category", "Meble"]]
+  Rendered meble/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 113ms (Views: 111.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/products/10" for 127.0.0.1 at 2015-08-20 23:57:28 +0200
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[35mProduct Load (0.5ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 10]]
+  Rendered products/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 108ms (Views: 104.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-08-20 23:57:32 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendered users/shared/_links.html.erb (0.5ms)
+  Rendered users/sessions/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 125ms (Views: 122.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-08-21 00:01:43 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendered users/shared/_links.html.erb (0.6ms)
+  Rendered users/sessions/new.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 320ms (Views: 302.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/kontakt.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-21 00:01:43 +0200
+
+
+Started GET "/assets/kontakt.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-21 00:01:43 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-21 00:01:48 +0200
+Processing by StaticPageController#home as HTML
+  Rendered static_page/home.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 141ms (Views: 140.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/kontakt/show" for 127.0.0.1 at 2015-08-21 00:01:50 +0200
+Processing by KontaktController#show as HTML
+  Rendered kontakt/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 173ms (Views: 171.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/kontakt/show" for 127.0.0.1 at 2015-08-21 00:02:16 +0200
+Processing by KontaktController#show as HTML
+  Rendered kontakt/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 153ms (Views: 152.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/kontakt/show" for 127.0.0.1 at 2015-08-21 00:04:05 +0200
+Processing by KontaktController#show as HTML
+  Rendered kontakt/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 118ms (Views: 117.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/kontakt/show" for 127.0.0.1 at 2015-08-21 00:04:23 +0200
+Processing by KontaktController#show as HTML
+  Rendered kontakt/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 122ms (Views: 121.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/kontakt/show" for 127.0.0.1 at 2015-08-21 00:04:41 +0200
+Processing by KontaktController#show as HTML
+  Rendered kontakt/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 130ms (Views: 129.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-08-21 00:04:46 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendered users/shared/_links.html.erb (0.5ms)
+  Rendered users/sessions/new.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 128ms (Views: 125.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books/all.html" for 127.0.0.1 at 2015-08-21 00:04:51 +0200
+Processing by BooksController#all as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."category" = ?[0m  [["category", "Ksiazki"]]
+  Rendered books/all.html.erb within layouts/application (14.4ms)
+Completed 200 OK in 147ms (Views: 138.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/kontakt/show" for 127.0.0.1 at 2015-08-21 00:04:56 +0200
+Processing by KontaktController#show as HTML
+  Rendered kontakt/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 116ms (Views: 114.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-21 00:05:01 +0200
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 127ms (Views: 124.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/kontakt/show" for 127.0.0.1 at 2015-08-21 00:05:03 +0200
+Processing by KontaktController#show as HTML
+  Rendered kontakt/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 126ms (Views: 125.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-08-21 00:05:07 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendered users/shared/_links.html.erb (0.6ms)
+  Rendered users/sessions/new.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 128ms (Views: 126.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/meble/index" for 127.0.0.1 at 2015-08-21 00:05:11 +0200
+Processing by MebleController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."category" = ?[0m  [["category", "Meble"]]
+  Rendered meble/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 121ms (Views: 119.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-21 00:05:14 +0200
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.5ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 139ms (Views: 136.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/elektronika/index.html" for 127.0.0.1 at 2015-08-21 09:55:56 +0200
+Processing by ElektronikaController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."category" = ?[0m  [["category", "Elektronika"]]
+  Rendered elektronika/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 116ms (Views: 115.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/9" for 127.0.0.1 at 2015-08-21 09:56:01 +0200
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mProduct Load (0.3ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 9]]
+  Rendered products/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 127ms (Views: 124.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-08-21 09:56:05 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendered users/shared/_links.html.erb (0.5ms)
+  Rendered users/sessions/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 120ms (Views: 117.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-21 09:56:08 +0200
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.5ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 130ms (Views: 128.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/kontakt/show" for 127.0.0.1 at 2015-08-21 09:56:11 +0200
+Processing by KontaktController#show as HTML
+  Rendered kontakt/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 125ms (Views: 124.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-08-21 09:56:18 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendered users/shared/_links.html.erb (0.5ms)
+  Rendered users/sessions/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 121ms (Views: 119.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-21 09:58:08 +0200
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 139ms (Views: 137.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/kontakt/show" for 127.0.0.1 at 2015-08-21 09:58:10 +0200
+Processing by KontaktController#show as HTML
+  Rendered kontakt/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 117ms (Views: 115.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-08-21 09:58:11 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendered users/shared/_links.html.erb (0.5ms)
+  Rendered users/sessions/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 121ms (Views: 119.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_products/all.html" for 127.0.0.1 at 2015-08-21 09:58:13 +0200
+Processing by AllProductsController#all as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."category" = ?[0m  [["category", "Obraz"]]
+  Rendered all_products/all.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 136ms (Views: 134.4ms | ActiveRecord: 0.3ms)
