@@ -17,7 +17,12 @@
     <%= value %>
 </div>
 <% end %>
-
+<% if current_user %>
+    Welcome <%= current_user.email %> <%= link_to 'Logout', destroy_user_session_path, method: :delete %>
+<% end %>
+<% if current_admin %>
+    Welcome <%= current_admin.email %> <%= link_to 'Logout', destroy_admin_session_path, method: :delete %>
+<% end %>
 <div id ="logo">
 <h3> 
 <div id ="obraz">
@@ -42,8 +47,13 @@
       </ul>
     </li>
   
-    <li><a href="/products">Products</a></li>
-  
+    <li><a href="/products">Products</a>
+  <% if current_admin %>
+  <ul>
+        <li><a href="/products/new.html">Add product</a></li>
+      </ul>
+</li>
+<% end %>
     <li><a href="/kontakt/show">Contact</a></li>
   </ol>
   <!--
