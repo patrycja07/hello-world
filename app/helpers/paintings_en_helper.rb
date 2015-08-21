@@ -1,0 +1,2 @@
+module PaintingsEnHelper
+end

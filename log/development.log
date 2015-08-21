@@ -27835,3 +27835,1265 @@ Processing by Devise::SessionsController#new as HTML
   Rendered users/sessions/new.html.erb within layouts/application (5.6ms)
 Completed 200 OK in 144ms (Views: 128.4ms | ActiveRecord: 0.4ms)
 >>>>>>> ccd1657b0d68d58e3b7cdebc71994da6fb37d74c
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-21 14:31:35 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.3) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.3) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:84:in `run_callbacks'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/yro07/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/yro07/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/yro07/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.1ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (40.4ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (49.3ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (91.5ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddNewPrice2ToProducts (20150821082629)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (1.4ms)[0m  [1mALTER TABLE "products" ADD "price2" decimal[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150821082629"]]
+  [1m[36m (13.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_admins_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_admins_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_admins_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_admins_on_email' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-21 14:32:15 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPageController#home as HTML
+  Rendered static_page/home.html.erb within layouts/application (311.1ms)
+Completed 200 OK in 848ms (Views: 829.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/all_products.self-bf2655e2199d3e2f4e7577d2a3c488293a562d6b286030eea5e852e00b78fb0b.css?body=1" for 127.0.0.1 at 2015-08-21 14:32:16 +0200
+
+
+Started GET "/assets/elektronika.self-adb8244a9a36d206f22787db0210c3d2f2a9973d4c45a5f92539d2afadef5a2c.css?body=1" for 127.0.0.1 at 2015-08-21 14:32:16 +0200
+
+
+Started GET "/assets/books.self-c2b2d0ca5e43507438e2e647abf6912b9240fdfd54d481230b650dc99ed20c02.css?body=1" for 127.0.0.1 at 2015-08-21 14:32:16 +0200
+
+
+Started GET "/assets/meble.self-084a84e519bca96a5ff9e495f64f569718e169d1fb4a9543a8329554ad816e53.css?body=1" for 127.0.0.1 at 2015-08-21 14:32:16 +0200
+
+
+Started GET "/assets/products.self-dd2b7b38403389eb6cc46a935abd784a71a12e0bc19ccb3ef784a3ab0e4023fd.css?body=1" for 127.0.0.1 at 2015-08-21 14:32:16 +0200
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-21 14:32:22 +0200
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (42.9ms)
+Completed 200 OK in 276ms (Views: 232.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/elektronika/index.html" for 127.0.0.1 at 2015-08-21 14:32:25 +0200
+Processing by ElektronikaController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."category" = ?[0m  [["category", "Elektronika"]]
+  Rendered elektronika/index.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 178ms (Views: 167.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books/all.html" for 127.0.0.1 at 2015-08-21 14:32:29 +0200
+Processing by BooksController#all as HTML
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products" WHERE "products"."category" = ?  [["category", "Ksiazki"]]
+  Rendered books/all.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 179ms (Views: 176.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/meble/index" for 127.0.0.1 at 2015-08-21 14:32:35 +0200
+Processing by MebleController#index as HTML
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."category" = ?[0m  [["category", "Meble"]]
+  Rendered meble/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 119ms (Views: 118.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/application_en/index" for 127.0.0.1 at 2015-08-21 14:56:34 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ApplicationEnController#index as HTML
+  Rendered application_en/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 1020ms (Views: 994.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-21 15:04:06 +0200
+Processing by StaticPageController#home as HTML
+  Rendered static_page/home.html.erb within layouts/application (10.3ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/home/yro07/projektv3/hello-world/app/views/layouts/application.html.erb:77: syntax error, unexpected '<', expecting ')'
+<br />
+ ^
+/home/yro07/projektv3/hello-world/app/views/layouts/application.html.erb:80: unknown regexp options - bdy
+unmatched close parenthesis: />
+<%= link_to image_tag("flag-en.jpg", :alt => "flag eng") , application_en_index_path );@output_buffer.safe_append='
+
+</
+/home/yro07/projektv3/hello-world/app/views/layouts/application.html.erb:81: syntax error, unexpected '<'
+</html>
+ ^
+/home/yro07/projektv3/hello-world/app/views/layouts/application.html.erb:81: unterminated regexp meets end of file):
+  app/views/layouts/application.html.erb:77: syntax error, unexpected '<', expecting ')'
+  app/views/layouts/application.html.erb:80: unknown regexp options - bdy
+  app/views/layouts/application.html.erb:81: syntax error, unexpected '<'
+  app/views/layouts/application.html.erb:81: unterminated regexp meets end of file
+
+
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-21 15:04:21 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPageController#home as HTML
+  Rendered static_page/home.html.erb within layouts/application (277.3ms)
+Completed 500 Internal Server Error in 307ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/home/yro07/projektv3/hello-world/app/views/layouts/application.html.erb:77: syntax error, unexpected '<', expecting ')'
+<br />
+ ^
+/home/yro07/projektv3/hello-world/app/views/layouts/application.html.erb:80: unknown regexp options - bdy
+unmatched close parenthesis: />
+<%= link_to image_tag("flag-en.jpg", :alt => "flag eng") , application_en_index_path );@output_buffer.safe_append='
+
+</
+/home/yro07/projektv3/hello-world/app/views/layouts/application.html.erb:81: syntax error, unexpected '<'
+</html>
+ ^
+/home/yro07/projektv3/hello-world/app/views/layouts/application.html.erb:81: unterminated regexp meets end of file):
+  app/views/layouts/application.html.erb:77: syntax error, unexpected '<', expecting ')'
+  app/views/layouts/application.html.erb:80: unknown regexp options - bdy
+  app/views/layouts/application.html.erb:81: syntax error, unexpected '<'
+  app/views/layouts/application.html.erb:81: unterminated regexp meets end of file
+
+
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-21 15:04:24 +0200
+Processing by StaticPageController#home as HTML
+  Rendered static_page/home.html.erb within layouts/application (7.9ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/home/yro07/projektv3/hello-world/app/views/layouts/application.html.erb:77: syntax error, unexpected '<', expecting ')'
+<br />
+ ^
+/home/yro07/projektv3/hello-world/app/views/layouts/application.html.erb:80: unknown regexp options - bdy
+unmatched close parenthesis: />
+<%= link_to image_tag("flag-en.jpg", :alt => "flag eng") , application_en_index_path );@output_buffer.safe_append='
+
+</
+/home/yro07/projektv3/hello-world/app/views/layouts/application.html.erb:81: syntax error, unexpected '<'
+</html>
+ ^
+/home/yro07/projektv3/hello-world/app/views/layouts/application.html.erb:81: unterminated regexp meets end of file):
+  app/views/layouts/application.html.erb:77: syntax error, unexpected '<', expecting ')'
+  app/views/layouts/application.html.erb:80: unknown regexp options - bdy
+  app/views/layouts/application.html.erb:81: syntax error, unexpected '<'
+  app/views/layouts/application.html.erb:81: unterminated regexp meets end of file
+
+
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-21 15:09:48 +0200
+Processing by StaticPageController#home as HTML
+  Rendered static_page/home.html.erb within layouts/application (45.9ms)
+Completed 200 OK in 555ms (Views: 554.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/application_en/index" for 127.0.0.1 at 2015-08-21 15:09:53 +0200
+Processing by ApplicationEnController#index as HTML
+  Rendered application_en/index.html.erb within layouts/application (227.8ms)
+Completed 500 Internal Server Error in 241ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `application_index_path' for #<#<Class:0xb88d438>:0xb88c54c>):
+    76: 
+    77: 
+    78: <br />
+    79: <%= link_to image_tag("flaga-pl.jpg", :alt => "flag pl") , application_index_path %>
+    80: 
+    81: </body>
+    82: </html>
+  app/views/application_en/index.html.erb:79:in `_app_views_application_en_index_html_erb___586983982_96720130'
+
+
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.3ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (33.9ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (50.9ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (124.4ms)
+
+
+Started GET "/application_en/index" for 127.0.0.1 at 2015-08-21 15:09:54 +0200
+Processing by ApplicationEnController#index as HTML
+  Rendered application_en/index.html.erb within layouts/application (235.8ms)
+Completed 500 Internal Server Error in 248ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `application_index_path' for #<#<Class:0xb88d438>:0xbb59c0c>):
+    76: 
+    77: 
+    78: <br />
+    79: <%= link_to image_tag("flaga-pl.jpg", :alt => "flag pl") , application_index_path %>
+    80: 
+    81: </body>
+    82: </html>
+  app/views/application_en/index.html.erb:79:in `_app_views_application_en_index_html_erb___586983982_98224070'
+
+
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.8ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (9.8ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (9.4ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (60.2ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (5.0ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (45.9ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (98.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-21 15:11:26 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPageController#home as HTML
+  Rendered static_page/home.html.erb within layouts/application (292.7ms)
+Completed 200 OK in 564ms (Views: 542.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/application_en/index" for 127.0.0.1 at 2015-08-21 15:11:36 +0200
+Processing by ApplicationEnController#index as HTML
+  Rendered application_en/index.html.erb within layouts/application (119.2ms)
+Completed 200 OK in 264ms (Views: 263.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/images/flaga-pl.jpg" for 127.0.0.1 at 2015-08-21 15:11:37 +0200
+
+ActionController::RoutingError (No route matches [GET] "/images/flaga-pl.jpg"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/yro07/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/yro07/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/yro07/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.8ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (14.2ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (119.4ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (62.5ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (102.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-21 15:12:04 +0200
+Processing by StaticPageController#home as HTML
+  Rendered static_page/home.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 175ms (Views: 174.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-21 15:17:00 +0200
+Processing by StaticPageController#home as HTML
+  Rendered static_page/home.html.erb within layouts/application (633.6ms)
+Completed 200 OK in 3433ms (Views: 3264.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-21 15:17:23 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPageController#home as HTML
+  Rendered static_page/home.html.erb within layouts/application (361.8ms)
+Completed 200 OK in 742ms (Views: 716.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/application_en/index" for 127.0.0.1 at 2015-08-21 15:17:28 +0200
+Processing by ApplicationEnController#index as HTML
+  Rendered application_en/index.html.erb within layouts/application (162.3ms)
+Completed 200 OK in 379ms (Views: 377.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/flaga-pl-a25d7b9c84c83adb9a05a84aaac51fe235d1b12c0ea9b814c107c6823b04f050.png" for 127.0.0.1 at 2015-08-21 15:17:28 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-21 15:21:01 +0200
+Processing by StaticPageController#home as HTML
+  Rendered static_page/home.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 297ms (Views: 289.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/application_en/index" for 127.0.0.1 at 2015-08-21 15:21:04 +0200
+Processing by ApplicationEnController#index as HTML
+  Rendered application_en/index.html.erb within layouts/en_layout (0.4ms)
+Completed 200 OK in 161ms (Views: 160.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-21 15:21:07 +0200
+Processing by StaticPageController#home as HTML
+  Rendered static_page/home.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 129ms (Views: 128.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/application_en/index" for 127.0.0.1 at 2015-08-21 15:21:10 +0200
+Processing by ApplicationEnController#index as HTML
+  Rendered application_en/index.html.erb within layouts/en_layout (0.0ms)
+Completed 200 OK in 202ms (Views: 201.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-21 15:23:09 +0200
+Processing by StaticPageController#home as HTML
+  Rendered static_page/home.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 187ms (Views: 186.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-21 15:23:31 +0200
+Processing by StaticPageController#home as HTML
+  Rendered static_page/home.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 201ms (Views: 200.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/application_en/index" for 127.0.0.1 at 2015-08-21 15:23:35 +0200
+Processing by ApplicationEnController#index as HTML
+  Rendered application_en/index.html.erb within layouts/en_layout (4.8ms)
+Completed 200 OK in 212ms (Views: 211.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-21 15:23:39 +0200
+Processing by StaticPageController#home as HTML
+  Rendered static_page/home.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 182ms (Views: 181.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-21 15:38:48 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPageController#home as HTML
+  Rendered static_page/home.html.erb within layouts/application (277.5ms)
+Completed 200 OK in 607ms (Views: 587.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/application_en/index" for 127.0.0.1 at 2015-08-21 15:38:53 +0200
+Processing by ApplicationEnController#index as HTML
+  Rendered application_en/index.html.erb within layouts/en_layout (0.4ms)
+Completed 200 OK in 197ms (Views: 196.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/elektronika/index2.html" for 127.0.0.1 at 2015-08-21 15:38:59 +0200
+
+ActionController::RoutingError (No route matches [GET] "/elektronika/index2.html"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/yro07/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/yro07/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/yro07/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.0ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (28.8ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (154.6ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (46.2ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (108.4ms)
+
+
+Started GET "/elektronika/index2.html" for 127.0.0.1 at 2015-08-21 15:39:00 +0200
+
+ActionController::RoutingError (No route matches [GET] "/elektronika/index2.html"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/yro07/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/yro07/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/yro07/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.0ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (14.7ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.7ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (84.4ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (52.9ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (96.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-21 15:41:36 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPageController#home as HTML
+  Rendered static_page/home.html.erb within layouts/application (306.4ms)
+Completed 200 OK in 1036ms (Views: 1006.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/books_en.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-21 15:41:37 +0200
+
+
+Started GET "/assets/electronics_en.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-21 15:41:37 +0200
+
+
+Started GET "/assets/books_en.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-21 15:41:37 +0200
+
+
+Started GET "/assets/electronics_en.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-21 15:41:37 +0200
+
+
+Started GET "/application_en/index" for 127.0.0.1 at 2015-08-21 15:41:46 +0200
+Processing by ApplicationEnController#index as HTML
+  Rendered application_en/index.html.erb within layouts/en_layout (0.5ms)
+Completed 200 OK in 185ms (Views: 184.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/elektronics_en/index.html" for 127.0.0.1 at 2015-08-21 15:41:56 +0200
+
+ActionController::RoutingError (No route matches [GET] "/elektronics_en/index.html"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/yro07/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/yro07/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/yro07/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.2ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (20.1ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.9ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (166.9ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (2.4ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (48.8ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (97.8ms)
+
+
+Started GET "/elektronics_en/index.html" for 127.0.0.1 at 2015-08-21 15:41:57 +0200
+
+ActionController::RoutingError (No route matches [GET] "/elektronics_en/index.html"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/yro07/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/yro07/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/yro07/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (6.7ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (9.3ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (101.2ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (51.4ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (99.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-21 15:42:21 +0200
+Processing by StaticPageController#home as HTML
+  Rendered static_page/home.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 287ms (Views: 287.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/application_en/index" for 127.0.0.1 at 2015-08-21 15:42:26 +0200
+Processing by ApplicationEnController#index as HTML
+  Rendered application_en/index.html.erb within layouts/en_layout (0.0ms)
+Completed 200 OK in 186ms (Views: 185.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/electronics_en/index.html" for 127.0.0.1 at 2015-08-21 15:42:28 +0200
+Processing by ElectronicsEnController#index as HTML
+  Rendered electronics_en/index.html.erb within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: 
+    3: 
+    4: <table>
+    5: <% @prod.each do |product| %>
+    6: <tr class="<%= cycle('list_line_odd', 'list_line_even') %>">
+    7: <td>
+    8: <%= image_tag(product.avatar_url, class: 'list_image') %>
+  app/views/electronics_en/index.html.erb:5:in `_app_views_electronics_en_index_html_erb__124447742_100486110'
+
+
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.0ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (7.0ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (32.5ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (46.8ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (95.1ms)
+
+
+Started GET "/electronics_en/index.html" for 127.0.0.1 at 2015-08-21 15:42:29 +0200
+Processing by ElectronicsEnController#index as HTML
+  Rendered electronics_en/index.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: 
+    3: 
+    4: <table>
+    5: <% @prod.each do |product| %>
+    6: <tr class="<%= cycle('list_line_odd', 'list_line_even') %>">
+    7: <td>
+    8: <%= image_tag(product.avatar_url, class: 'list_image') %>
+  app/views/electronics_en/index.html.erb:5:in `_app_views_electronics_en_index_html_erb__124447742_100486110'
+
+
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (16.9ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.1ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (64.0ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (4.7ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (54.1ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (103.7ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_admins_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_admins_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_admins_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_admins_on_email' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-21 15:44:06 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (11.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPageController#home as HTML
+  Rendered static_page/home.html.erb within layouts/application (290.9ms)
+Completed 200 OK in 653ms (Views: 631.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/application_en/index" for 127.0.0.1 at 2015-08-21 15:44:10 +0200
+Processing by ApplicationEnController#index as HTML
+  Rendered application_en/index.html.erb within layouts/en_layout (0.3ms)
+Completed 200 OK in 275ms (Views: 272.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/electronics_en/index.html" for 127.0.0.1 at 2015-08-21 15:44:12 +0200
+Processing by ElectronicsEnController#index as HTML
+  Rendered electronics_en/index.html.erb within layouts/application (4.8ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: 
+    3: 
+    4: <table>
+    5: <% @prod.each do |product| %>
+    6: <tr class="<%= cycle('list_line_odd', 'list_line_even') %>">
+    7: <td>
+    8: <%= image_tag(product.avatar_url, class: 'list_image') %>
+  app/views/electronics_en/index.html.erb:5:in `_app_views_electronics_en_index_html_erb__317590210__621840448'
+
+
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.6ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (42.4ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (49.4ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (107.9ms)
+
+
+Started GET "/electronics_en/index.html" for 127.0.0.1 at 2015-08-21 15:44:13 +0200
+Processing by ElectronicsEnController#index as HTML
+  Rendered electronics_en/index.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: 
+    3: 
+    4: <table>
+    5: <% @prod.each do |product| %>
+    6: <tr class="<%= cycle('list_line_odd', 'list_line_even') %>">
+    7: <td>
+    8: <%= image_tag(product.avatar_url, class: 'list_image') %>
+  app/views/electronics_en/index.html.erb:5:in `_app_views_electronics_en_index_html_erb__317590210__621840448'
+
+
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.4ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (61.9ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (9.3ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (54.1ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (2.8ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (90.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-21 15:45:22 +0200
+Processing by StaticPageController#home as HTML
+  Rendered static_page/home.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 275ms (Views: 272.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/application_en/index" for 127.0.0.1 at 2015-08-21 15:45:27 +0200
+Processing by ApplicationEnController#index as HTML
+  Rendered application_en/index.html.erb within layouts/en_layout (0.1ms)
+Completed 200 OK in 337ms (Views: 336.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/electronics_en/index.html" for 127.0.0.1 at 2015-08-21 15:45:29 +0200
+Processing by ElectronicsEnController#index as HTML
+  [1m[35mProduct Load (0.8ms)[0m  SELECT "products".* FROM "products" WHERE "products"."category" = ?  [["category", "Elektronika"]]
+  Rendered electronics_en/index.html.erb within layouts/application (22.3ms)
+Completed 200 OK in 337ms (Views: 266.3ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/application_en/index" for 127.0.0.1 at 2015-08-21 15:45:36 +0200
+Processing by ApplicationEnController#index as HTML
+  Rendered application_en/index.html.erb within layouts/en_layout (0.0ms)
+Completed 200 OK in 148ms (Views: 147.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/electronics_en/index.html" for 127.0.0.1 at 2015-08-21 15:45:37 +0200
+Processing by ElectronicsEnController#index as HTML
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."category" = ?[0m  [["category", "Elektronika"]]
+  Rendered electronics_en/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 197ms (Views: 196.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/application_en/index" for 127.0.0.1 at 2015-08-21 15:45:45 +0200
+Processing by ApplicationEnController#index as HTML
+  Rendered application_en/index.html.erb within layouts/en_layout (0.0ms)
+Completed 200 OK in 148ms (Views: 147.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-21 15:45:46 +0200
+Processing by StaticPageController#home as HTML
+  Rendered static_page/home.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 257ms (Views: 256.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/elektronika/index.html" for 127.0.0.1 at 2015-08-21 15:45:49 +0200
+Processing by ElektronikaController#index as HTML
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products" WHERE "products"."category" = ?  [["category", "Elektronika"]]
+  Rendered elektronika/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 230ms (Views: 229.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/application_en/index" for 127.0.0.1 at 2015-08-21 15:45:51 +0200
+Processing by ApplicationEnController#index as HTML
+  Rendered application_en/index.html.erb within layouts/en_layout (0.1ms)
+Completed 200 OK in 609ms (Views: 606.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_products/all.html" for 127.0.0.1 at 2015-08-21 15:46:06 +0200
+Processing by AllProductsController#all as HTML
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."category" = ?[0m  [["category", "Obraz"]]
+  Rendered all_products/all.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 156ms (Views: 155.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/elektronika/index.html" for 127.0.0.1 at 2015-08-21 15:46:43 +0200
+Processing by ElektronikaController#index as HTML
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products" WHERE "products"."category" = ?  [["category", "Elektronika"]]
+  Rendered elektronika/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 167ms (Views: 166.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/application_en/index" for 127.0.0.1 at 2015-08-21 15:56:42 +0200
+Processing by ApplicationEnController#index as HTML
+  Rendered application_en/index.html.erb within layouts/en_layout (0.5ms)
+Completed 200 OK in 280ms (Views: 243.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-21 15:56:45 +0200
+Processing by StaticPageController#home as HTML
+  Rendered static_page/home.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 345ms (Views: 342.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/application_en/index" for 127.0.0.1 at 2015-08-21 15:56:50 +0200
+Processing by ApplicationEnController#index as HTML
+  Rendered application_en/index.html.erb within layouts/en_layout (0.1ms)
+Completed 200 OK in 137ms (Views: 136.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/electronics_en/index.html" for 127.0.0.1 at 2015-08-21 15:56:58 +0200
+Processing by ElectronicsEnController#index as HTML
+  [1m[36mProduct Load (17.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."category" = ?[0m  [["category", "Elektronika"]]
+  Rendered electronics_en/index.html.erb within layouts/application (51.3ms)
+Completed 200 OK in 217ms (Views: 191.2ms | ActiveRecord: 17.1ms)
+
+
+Started GET "/electronics_en/index.html" for 127.0.0.1 at 2015-08-21 15:58:57 +0200
+Processing by ElectronicsEnController#index as HTML
+  [1m[35mProduct Load (1.2ms)[0m  SELECT "products".* FROM "products" WHERE "products"."category" = ?  [["category", "Elektronika"]]
+  Rendered electronics_en/index.html.erb within layouts/en_layout (82.9ms)
+Completed 200 OK in 1151ms (Views: 777.0ms | ActiveRecord: 27.6ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-21 16:07:25 +0200
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (4.2ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (288.5ms)
+Completed 200 OK in 653ms (Views: 570.0ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-21 16:07:30 +0200
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 205ms (Views: 204.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/11" for 127.0.0.1 at 2015-08-21 16:07:35 +0200
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mProduct Load (0.6ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 11]]
+  Rendered products/show.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 418ms (Views: 256.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-21 16:21:00 +0200
+Processing by StaticPageController#home as HTML
+  Rendered static_page/home.html.erb within layouts/application (24.4ms)
+Completed 200 OK in 705ms (Views: 695.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/application_en/index" for 127.0.0.1 at 2015-08-21 16:21:10 +0200
+Processing by ApplicationEnController#index as HTML
+  Rendered application_en/index.html.erb within layouts/en_layout (0.1ms)
+Completed 200 OK in 656ms (Views: 655.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books/all.html" for 127.0.0.1 at 2015-08-21 16:21:33 +0200
+Processing by BooksController#all as HTML
+  [1m[35mProduct Load (0.5ms)[0m  SELECT "products".* FROM "products" WHERE "products"."category" = ?  [["category", "Ksiazki"]]
+  Rendered books/all.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 225ms (Views: 200.1ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-21 16:21:56 +0200
+Processing by StaticPageController#home as HTML
+  Rendered static_page/home.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 275ms (Views: 267.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/application_en/index" for 127.0.0.1 at 2015-08-21 16:22:02 +0200
+Processing by ApplicationEnController#index as HTML
+  Rendered application_en/index.html.erb within layouts/en_layout (0.1ms)
+Completed 200 OK in 242ms (Views: 241.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books_en/index.html" for 127.0.0.1 at 2015-08-21 16:22:04 +0200
+Processing by BooksEnController#index as HTML
+  [1m[36mProduct Load (12.8ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."category" = ?[0m  [["category", "Ksiazki"]]
+  Rendered books_en/index.html.erb within layouts/application (14.4ms)
+Completed 200 OK in 255ms (Views: 240.8ms | ActiveRecord: 12.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-21 16:28:25 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPageController#home as HTML
+  Rendered static_page/home.html.erb within layouts/application (365.0ms)
+Completed 200 OK in 1049ms (Views: 1026.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/meble_en.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-21 16:28:26 +0200
+
+
+Started GET "/assets/meble_en.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-21 16:28:26 +0200
+
+
+Started GET "/application_en/index" for 127.0.0.1 at 2015-08-21 16:28:31 +0200
+Processing by ApplicationEnController#index as HTML
+  Rendered application_en/index.html.erb within layouts/en_layout (0.3ms)
+Completed 200 OK in 314ms (Views: 313.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/meble_en/index.html" for 127.0.0.1 at 2015-08-21 16:28:35 +0200
+Processing by MebleEnController#index as HTML
+  [1m[35mProduct Load (16.9ms)[0m  SELECT "products".* FROM "products" WHERE "products"."category" = ?  [["category", "Meble"]]
+  Rendered meble_en/index.html.erb within layouts/application (29.4ms)
+Completed 200 OK in 328ms (Views: 262.4ms | ActiveRecord: 22.7ms)
+
+
+Started GET "/elektronika/index.html" for 127.0.0.1 at 2015-08-21 16:28:43 +0200
+Processing by ElektronikaController#index as HTML
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."category" = ?[0m  [["category", "Elektronika"]]
+  Rendered elektronika/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 159ms (Views: 157.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/application_en/index" for 127.0.0.1 at 2015-08-21 16:28:49 +0200
+Processing by ApplicationEnController#index as HTML
+  Rendered application_en/index.html.erb within layouts/en_layout (0.0ms)
+Completed 200 OK in 165ms (Views: 164.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/meble_en/index.html" for 127.0.0.1 at 2015-08-21 16:28:52 +0200
+Processing by MebleEnController#index as HTML
+  [1m[35mProduct Load (2.5ms)[0m  SELECT "products".* FROM "products" WHERE "products"."category" = ?  [["category", "Meble"]]
+  Rendered meble_en/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 152ms (Views: 148.2ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/meble_en/index.html" for 127.0.0.1 at 2015-08-21 16:29:28 +0200
+Processing by MebleEnController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."category" = ?[0m  [["category", "Meble"]]
+  Rendered meble_en/index.html.erb within layouts/en_layout (1.4ms)
+Completed 200 OK in 309ms (Views: 283.4ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-21 16:29:45 +0200
+Processing by StaticPageController#home as HTML
+  Rendered static_page/home.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 188ms (Views: 187.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/application_en/index" for 127.0.0.1 at 2015-08-21 16:29:48 +0200
+Processing by ApplicationEnController#index as HTML
+  Rendered application_en/index.html.erb within layouts/en_layout (0.1ms)
+Completed 200 OK in 284ms (Views: 282.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/all_products/all.html" for 127.0.0.1 at 2015-08-21 16:31:05 +0200
+Processing by AllProductsController#all as HTML
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products" WHERE "products"."category" = ?  [["category", "Obraz"]]
+  Rendered all_products/all.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 172ms (Views: 171.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-21 16:49:28 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPageController#home as HTML
+  Rendered static_page/home.html.erb within layouts/application (301.0ms)
+Completed 200 OK in 1147ms (Views: 1094.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/paintings_en.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-21 16:49:29 +0200
+
+
+Started GET "/assets/paintings_en.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-21 16:49:30 +0200
+
+
+Started GET "/application_en/index" for 127.0.0.1 at 2015-08-21 16:49:46 +0200
+Processing by ApplicationEnController#index as HTML
+  Rendered application_en/index.html.erb within layouts/en_layout (0.4ms)
+Completed 200 OK in 220ms (Views: 217.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/electronics_en/index.html" for 127.0.0.1 at 2015-08-21 16:49:52 +0200
+Processing by ElectronicsEnController#index as HTML
+  [1m[35mProduct Load (27.4ms)[0m  SELECT "products".* FROM "products" WHERE "products"."category" = ?  [["category", "Elektronika"]]
+  Rendered electronics_en/index.html.erb within layouts/en_layout (40.3ms)
+Completed 200 OK in 289ms (Views: 216.2ms | ActiveRecord: 36.1ms)
+
+
+Started GET "/all_products/all.html" for 127.0.0.1 at 2015-08-21 16:50:05 +0200
+Processing by AllProductsController#all as HTML
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."category" = ?[0m  [["category", "Obraz"]]
+  Rendered all_products/all.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 182ms (Views: 181.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/application_en/index" for 127.0.0.1 at 2015-08-21 16:50:10 +0200
+Processing by ApplicationEnController#index as HTML
+  Rendered application_en/index.html.erb within layouts/en_layout (0.0ms)
+Completed 200 OK in 284ms (Views: 283.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books_en/index.html" for 127.0.0.1 at 2015-08-21 16:50:12 +0200
+Processing by BooksEnController#index as HTML
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products" WHERE "products"."category" = ?  [["category", "Ksiazki"]]
+  Rendered books_en/index.html.erb within layouts/en_layout (3.9ms)
+Completed 200 OK in 176ms (Views: 174.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/electronics_en/index.html" for 127.0.0.1 at 2015-08-21 16:50:15 +0200
+Processing by ElectronicsEnController#index as HTML
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."category" = ?[0m  [["category", "Elektronika"]]
+  Rendered electronics_en/index.html.erb within layouts/en_layout (1.0ms)
+Completed 200 OK in 172ms (Views: 171.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/all_products/all.html" for 127.0.0.1 at 2015-08-21 16:50:18 +0200
+Processing by AllProductsController#all as HTML
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products" WHERE "products"."category" = ?  [["category", "Obraz"]]
+  Rendered all_products/all.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 175ms (Views: 174.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/all_products/all.html" for 127.0.0.1 at 2015-08-21 16:53:42 +0200
+Processing by AllProductsController#all as HTML
+  [1m[36mProduct Load (3.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."category" = ?[0m  [["category", "Obraz"]]
+  Rendered all_products/all.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 401ms (Views: 397.4ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/application_en/index" for 127.0.0.1 at 2015-08-21 16:53:46 +0200
+Processing by ApplicationEnController#index as HTML
+  Rendered application_en/index.html.erb within layouts/en_layout (0.1ms)
+Completed 200 OK in 363ms (Views: 360.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/paintings/index.html" for 127.0.0.1 at 2015-08-21 16:53:48 +0200
+
+ActionController::RoutingError (No route matches [GET] "/paintings/index.html"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/yro07/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/yro07/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/yro07/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.5ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (19.5ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (181.2ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (68.1ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (126.1ms)
+
+
+Started GET "/paintings/index.html" for 127.0.0.1 at 2015-08-21 16:53:49 +0200
+
+ActionController::RoutingError (No route matches [GET] "/paintings/index.html"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/yro07/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/yro07/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/yro07/.rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.8ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.6ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (6.5ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (128.8ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (3.4ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (64.1ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (11.7ms)
+  Rendered /home/yro07/.rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (121.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-21 16:54:26 +0200
+Processing by StaticPageController#home as HTML
+  Rendered static_page/home.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 363ms (Views: 361.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-21 16:55:21 +0200
+Processing by StaticPageController#home as HTML
+  Rendered static_page/home.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 369ms (Views: 368.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/application_en/index" for 127.0.0.1 at 2015-08-21 16:55:25 +0200
+Processing by ApplicationEnController#index as HTML
+  Rendered application_en/index.html.erb within layouts/en_layout (0.1ms)
+Completed 200 OK in 377ms (Views: 376.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-21 16:55:28 +0200
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (8.5ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (89.9ms)
+Completed 200 OK in 452ms (Views: 442.2ms | ActiveRecord: 8.8ms)
+
+
+Started GET "/all_products/all.html" for 127.0.0.1 at 2015-08-21 16:55:34 +0200
+Processing by AllProductsController#all as HTML
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."category" = ?[0m  [["category", "Obraz"]]
+  Rendered all_products/all.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 225ms (Views: 224.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/application_en/index" for 127.0.0.1 at 2015-08-21 16:55:39 +0200
+Processing by ApplicationEnController#index as HTML
+  Rendered application_en/index.html.erb within layouts/en_layout (0.1ms)
+Completed 200 OK in 386ms (Views: 385.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/paintings_en/index.html" for 127.0.0.1 at 2015-08-21 16:55:41 +0200
+Processing by PaintingsEnController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE "products"."category" = ?  [["category", "Paintings"]]
+  Rendered paintings_en/index.html.erb within layouts/en_layout (7.1ms)
+Completed 200 OK in 327ms (Views: 325.5ms | ActiveRecord: 0.2ms)

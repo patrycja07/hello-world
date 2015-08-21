@@ -1,4 +1,16 @@
 Rails.application.routes.draw do
+  get 'paintings_en/index'
+
+  get 'meble_en/index'
+
+  get 'books_en/index'
+
+  get 'electronics_en/index'
+
+  get 'application_en/index'
+
+  get 'application_en/show'
+
   devise_for :admins
   get 'kontakt/show'
 

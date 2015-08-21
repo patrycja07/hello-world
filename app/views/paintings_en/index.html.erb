@@ -1,0 +1,34 @@
+<h1><center>Paintings </center></h1>
+
+
+<table>
+<% @prod.each do |product| %>
+<tr class="<%= cycle('list_line_odd', 'list_line_even') %>">
+<td>
+<%= image_tag(product.avatar_url, class: 'list_image') %>
+</td>
+
+<td class="list_description">
+<dl>
+<dt><%= product.title %></dt>
+<dd><%= truncate(strip_tags(product.description), length: 80) %></dd>
+<dk><%= product.price %></dk><br />
+<dr><%= ("Promocja: "+product.price2.to_s) if product.price2? %></dr>
+</dl>
+</td>
+
+<td class="list_actions">
+<%= link_to 'Show', product %><br/>
+<%= link_to 'Edit', edit_product_path(product) %><br/>
+<%= link_to 'Destroy', product, method: :delete,
+data: { confirm: 'Are you sure?' } %>
+</td>
+</tr>
+<% end %>
+</table>
+
+<br />
+<td class="list_button"><center>
+<%= link_to 'New product', new_product_path %>
+</center>
+</td>
