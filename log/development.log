@@ -24603,6 +24603,7 @@ Processing by AllProductsController#all as HTML
 Completed 200 OK in 136ms (Views: 134.4ms | ActiveRecord: 0.3ms)
 
 
+<<<<<<< HEAD
 Started GET "/admins/sign_in" for 127.0.0.1 at 2015-08-21 10:35:25 +0200
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
 
@@ -24693,6 +24694,53 @@ Migrating to DeviseCreateAdmins (20150821083516)
             WHERE name='index_admins_on_email' AND type='index'
 
   [1m[36m (0.1ms)[0m  [1m            SELECT sql
+=======
+Started GET "/products" for 127.0.0.1 at 2015-08-21 09:59:48 +0200
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 124ms (Views: 122.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2015-08-21 10:00:10 +0200
+Processing by ProductsController#new as HTML
+  Rendered products/_form.html.erb (7.6ms)
+  Rendered products/new.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 133ms (Views: 131.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-21 10:00:20 +0200
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.5ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 141ms (Views: 139.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2015-08-21 10:00:36 +0200
+Processing by ProductsController#new as HTML
+  Rendered products/_form.html.erb (3.9ms)
+  Rendered products/new.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 120ms (Views: 118.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2015-08-21 10:01:29 +0200
+Processing by ProductsController#new as HTML
+  Rendered products/_form.html.erb (5.7ms)
+  Rendered products/new.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 136ms (Views: 134.9ms | ActiveRecord: 0.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddNewPriceToProducts (20150821080735)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddNewPriceToProducts (20150821080735)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.7ms)[0m  [1mALTER TABLE "products" ADD "new_price" varchar[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150821080735"]]
+  [1m[36m (456.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+>>>>>>> ccd1657b0d68d58e3b7cdebc71994da6fb37d74c
             FROM sqlite_master
             WHERE name='index_users_on_reset_password_token' AND type='index'
             UNION ALL
@@ -24700,7 +24748,11 @@ Migrating to DeviseCreateAdmins (20150821083516)
             FROM sqlite_temp_master
             WHERE name='index_users_on_reset_password_token' AND type='index'
 [0m
+<<<<<<< HEAD
   [1m[35m (0.1ms)[0m              SELECT sql
+=======
+  [1m[35m (0.3ms)[0m              SELECT sql
+>>>>>>> ccd1657b0d68d58e3b7cdebc71994da6fb37d74c
             FROM sqlite_master
             WHERE name='index_users_on_email' AND type='index'
             UNION ALL
@@ -24710,6 +24762,7 @@ Migrating to DeviseCreateAdmins (20150821083516)
 
 
 
+<<<<<<< HEAD
 Started GET "/admins/sign_in" for 127.0.0.1 at 2015-08-21 10:36:07 +0200
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
 Processing by Devise::SessionsController#new as HTML
@@ -26122,3 +26175,1663 @@ Processing by Devise::SessionsController#new as HTML
   Rendered devise/shared/_links.html.erb (12.5ms)
   Rendered devise/sessions/new.html.erb within layouts/application (15.0ms)
 Completed 200 OK in 185ms (Views: 183.6ms | ActiveRecord: 0.0ms)
+=======
+Started GET "/products/new" for 127.0.0.1 at 2015-08-21 10:13:11 +0200
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Processing by ProductsController#new as HTML
+  Rendered products/_form.html.erb (7.4ms)
+  Rendered products/new.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 147ms (Views: 127.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/all_products/all.html" for 127.0.0.1 at 2015-08-21 10:13:26 +0200
+Processing by AllProductsController#all as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."category" = ?[0m  [["category", "Obraz"]]
+  Rendered all_products/all.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 132ms (Views: 130.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products/4" for 127.0.0.1 at 2015-08-21 10:13:27 +0200
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mProduct Load (0.3ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered products/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 118ms (Views: 115.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books/all.html" for 127.0.0.1 at 2015-08-21 10:13:44 +0200
+Processing by BooksController#all as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."category" = ?[0m  [["category", "Ksiazki"]]
+  Rendered books/all.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 124ms (Views: 122.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/7" for 127.0.0.1 at 2015-08-21 10:13:46 +0200
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mProduct Load (0.3ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 7]]
+  Rendered products/show.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 137ms (Views: 134.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-21 10:14:43 +0200
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 129ms (Views: 127.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-21 10:18:04 +0200
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 200ms (Views: 199.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/products.self-3e89fb7299ca47fb5e878bb252b7a735585325fdd632c7c585ad2b60ca9eced6.css?body=1" for 127.0.0.1 at 2015-08-21 10:18:04 +0200
+
+
+Started GET "/products/4" for 127.0.0.1 at 2015-08-21 10:18:09 +0200
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered products/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 122ms (Views: 119.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products/4/edit" for 127.0.0.1 at 2015-08-21 10:18:12 +0200
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mProduct Load (0.2ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered products/_form.html.erb (8.4ms)
+  Rendered products/edit.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 130ms (Views: 128.6ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/products/4" for 127.0.0.1 at 2015-08-21 10:18:18 +0200
+Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZcGLjVNoFdHidDgl2s5Svh/9B7FNKKyUyq/HJ88h3n//uOmNRyQEhj9TP1YF1UygVP1/XalN9p/Ua9HHjpzjOw==", "product"=>{"title"=>"\"Martwa natura\"", "category"=>"Obraz", "description"=>"Martwa natura to obraz.", "avatar_cache"=>"", "price"=>"100.0", "new_price"=>"89.99"}, "commit"=>"Update Product", "id"=>"4"}
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 4]]
+Unpermitted parameters: avatar_cache, new_price
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mProduct Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "products" WHERE ("products"."title" = '"Martwa natura"' AND "products"."id" != 4) LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/products/4
+Completed 302 Found in 11ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/products/4" for 127.0.0.1 at 2015-08-21 10:18:18 +0200
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered products/show.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 136ms (Views: 134.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-21 10:18:24 +0200
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.6ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 148ms (Views: 146.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/products/4/edit" for 127.0.0.1 at 2015-08-21 10:19:30 +0200
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered products/_form.html.erb (6.1ms)
+  Rendered products/edit.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 134ms (Views: 132.8ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/products/4" for 127.0.0.1 at 2015-08-21 10:19:34 +0200
+Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VQqnCWSnCuUCH1VJfPQs9B2RiyGjVzBUYWHkWxDElfvPc8UJcOsbst84Ujqj7zLqVpHzzUcyal9/pfK7UXmovw==", "product"=>{"title"=>"\"Martwa natura\"", "category"=>"Obraz", "description"=>"Martwa natura to obraz.", "avatar_cache"=>"", "price"=>"100.0", "new_price"=>"aq"}, "commit"=>"Update Product", "id"=>"4"}
+  [1m[35mProduct Load (0.2ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 4]]
+Unpermitted parameters: avatar_cache, new_price
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mProduct Exists (0.2ms)[0m  SELECT  1 AS one FROM "products" WHERE ("products"."title" = '"Martwa natura"' AND "products"."id" != 4) LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/products/4
+Completed 302 Found in 8ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/products/4" for 127.0.0.1 at 2015-08-21 10:19:34 +0200
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered products/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 122ms (Views: 120.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/products/4" for 127.0.0.1 at 2015-08-21 10:21:48 +0200
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered products/show.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 191ms (Views: 189.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/products.self-1db0bce8019a746518a8ebad69a11486b774308344bfe4ae58bebe16b620888e.css?body=1" for 127.0.0.1 at 2015-08-21 10:21:48 +0200
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-21 10:21:56 +0200
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.5ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (15.5ms)
+Completed 200 OK in 133ms (Views: 131.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2015-08-21 10:22:00 +0200
+Processing by ProductsController#new as HTML
+  Rendered products/_form.html.erb (8.9ms)
+  Rendered products/new.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 135ms (Views: 133.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/products" for 127.0.0.1 at 2015-08-21 10:23:37 +0200
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zwCTGKysog31XnhGtXaSA83oFzQC7XcbKoDa/Umu0UlVefEYuOCzWih5fzVqbYwdhuhv2OaILRA0RMwdCBPsDQ==", "product"=>{"title"=>"Most", "category"=>"Obraz", "description"=>"Most w Brooklynie.", "avatar"=>#<ActionDispatch::Http::UploadedFile:0x00000003ec75e0 @tempfile=#<Tempfile:/tmp/RackMultipart20150821-2412-1m59ey0.jpg>, @original_filename="bridge.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"product[avatar]\"; filename=\"bridge.jpg\"\r\nContent-Type: image/jpeg\r\n">, "avatar_cache"=>"", "price"=>"300.00", "new_price"=>"299.99"}, "commit"=>"Create Product"}
+Unpermitted parameters: avatar_cache, new_price
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mProduct Exists (0.2ms)[0m  SELECT  1 AS one FROM "products" WHERE "products"."title" = 'Most' LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "products" ("title", "category", "description", "avatar", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Most"], ["category", "Obraz"], ["description", "Most w Brooklynie."], ["avatar", "bridge.jpg"], ["price", 300.0], ["created_at", "2015-08-21 08:23:37.530235"], ["updated_at", "2015-08-21 08:23:37.530235"]]
+  [1m[35m (134.9ms)[0m  commit transaction
+Redirected to http://localhost:3000/products/11
+Completed 302 Found in 147ms (ActiveRecord: 135.7ms)
+
+
+Started GET "/products/11" for 127.0.0.1 at 2015-08-21 10:23:37 +0200
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 11]]
+  Rendered products/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 142ms (Views: 140.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/11" for 127.0.0.1 at 2015-08-21 10:24:11 +0200
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[35mProduct Load (0.2ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 11]]
+  Rendered products/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 124ms (Views: 122.9ms | ActiveRecord: 0.2ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to AddNewPriceToProducts (20150821080735)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.1ms)[0m  CREATE TEMPORARY TABLE "aproducts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "description" text, "image_url" varchar, "price" decimal(8,2), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "category" varchar, "avatar" varchar, "new_price" varchar) 
+  [1m[36m (0.4ms)[0m  [1mSELECT * FROM "products"[0m
+  [1m[35m (0.2ms)[0m  INSERT INTO "aproducts" ("id","title","description","image_url","price","created_at","updated_at","category","avatar","new_price") VALUES (4, '"Martwa natura"', 'Martwa natura to obraz.', 'obraz.jpg', 100, '2015-08-19 10:01:28.565326', '2015-08-20 14:42:17.652683', 'Obraz', 'images__3_.jpg', NULL)
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "aproducts" ("id","title","description","image_url","price","created_at","updated_at","category","avatar","new_price") VALUES (7, 'B jak Barakuda', 'Ksiażka dla dzieci.', NULL, 19.99, '2015-08-20 13:52:30.875951', '2015-08-20 14:11:29.674653', 'Ksiazki', 'download__1_.jpg', NULL)[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "aproducts" ("id","title","description","image_url","price","created_at","updated_at","category","avatar","new_price") VALUES (8, 'ZUZA', 'Ksiażka dla dzieci.', NULL, 29.99, '2015-08-20 14:08:59.928579', '2015-08-20 14:08:59.928579', 'Ksiazki', 'download__2_.jpg', NULL)
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "aproducts" ("id","title","description","image_url","price","created_at","updated_at","category","avatar","new_price") VALUES (9, 'Żelazko', 'Żelazko', NULL, 199.99, '2015-08-20 18:18:25.172474', '2015-08-20 18:18:25.172474', 'Elektronika', 'download__3_.jpg', NULL)[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "aproducts" ("id","title","description","image_url","price","created_at","updated_at","category","avatar","new_price") VALUES (10, 'Fotel', 'Różowy fotel.', NULL, 249.9, '2015-08-20 18:29:23.241110', '2015-08-20 18:29:23.241110', 'Meble', 'fotel.jpg', NULL)
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "aproducts" ("id","title","description","image_url","price","created_at","updated_at","category","avatar","new_price") VALUES (11, 'Most', 'Most w Brooklynie.', NULL, 300, '2015-08-21 08:23:37.530235', '2015-08-21 08:23:37.530235', 'Obraz', 'bridge.jpg', NULL)[0m
+  [1m[35m (0.5ms)[0m  DROP TABLE "products"
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "products" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "description" text, "image_url" varchar, "price" decimal(8,2), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "category" varchar, "avatar" varchar) [0m
+  [1m[35m (0.4ms)[0m  SELECT * FROM "aproducts"
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "products" ("id","title","description","image_url","price","created_at","updated_at","category","avatar") VALUES (4, '"Martwa natura"', 'Martwa natura to obraz.', 'obraz.jpg', 100, '2015-08-19 10:01:28.565326', '2015-08-20 14:42:17.652683', 'Obraz', 'images__3_.jpg')[0m
+  [1m[35m (0.2ms)[0m  INSERT INTO "products" ("id","title","description","image_url","price","created_at","updated_at","category","avatar") VALUES (7, 'B jak Barakuda', 'Ksiażka dla dzieci.', NULL, 19.99, '2015-08-20 13:52:30.875951', '2015-08-20 14:11:29.674653', 'Ksiazki', 'download__1_.jpg')
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "products" ("id","title","description","image_url","price","created_at","updated_at","category","avatar") VALUES (8, 'ZUZA', 'Ksiażka dla dzieci.', NULL, 29.99, '2015-08-20 14:08:59.928579', '2015-08-20 14:08:59.928579', 'Ksiazki', 'download__2_.jpg')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "products" ("id","title","description","image_url","price","created_at","updated_at","category","avatar") VALUES (9, 'Żelazko', 'Żelazko', NULL, 199.99, '2015-08-20 18:18:25.172474', '2015-08-20 18:18:25.172474', 'Elektronika', 'download__3_.jpg')
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "products" ("id","title","description","image_url","price","created_at","updated_at","category","avatar") VALUES (10, 'Fotel', 'Różowy fotel.', NULL, 249.9, '2015-08-20 18:29:23.241110', '2015-08-20 18:29:23.241110', 'Meble', 'fotel.jpg')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "products" ("id","title","description","image_url","price","created_at","updated_at","category","avatar") VALUES (11, 'Most', 'Most w Brooklynie.', NULL, 300, '2015-08-21 08:23:37.530235', '2015-08-21 08:23:37.530235', 'Obraz', 'bridge.jpg')
+  [1m[36m (0.4ms)[0m  [1mDROP TABLE "aproducts"[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?  [["version", "20150821080735"]]
+  [1m[36m (111.4ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.3ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddNewPrice2ToProducts (20150821082629)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.8ms)[0m  [1mALTER TABLE "products" ADD "price2" decimal[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150821082629"]]
+  [1m[36m (121.5ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+
+
+Started GET "/products/11" for 127.0.0.1 at 2015-08-21 10:29:20 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[35mProduct Load (0.3ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 11]]
+  Rendered products/show.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 166ms (Views: 144.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/products/11/edit" for 127.0.0.1 at 2015-08-21 10:29:25 +0200
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 11]]
+  Rendered products/_form.html.erb (9.2ms)
+  Rendered products/edit.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 180ms (Views: 177.9ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/products/11" for 127.0.0.1 at 2015-08-21 10:29:35 +0200
+Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Xg8eQgMAzd6LXJiuHn4NA4E8LwhkwcMW/ClDXUm6THDEdnxCF0zciVZ7n93BZRMdyjxX5ICkmR3i7VW9CAdxNA==", "product"=>{"title"=>"Most", "category"=>"Obraz", "description"=>"Most w Brooklynie.", "avatar_cache"=>"", "price"=>"299.0"}, "commit"=>"Update Product", "id"=>"11"}
+  [1m[35mProduct Load (0.2ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 11]]
+Unpermitted parameter: avatar_cache
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mProduct Exists (0.2ms)[0m  SELECT  1 AS one FROM "products" WHERE ("products"."title" = 'Most' AND "products"."id" != 11) LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "products" SET "price" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["price", 299.0], ["updated_at", "2015-08-21 08:29:35.264182"], ["id", 11]]
+  [1m[35m (154.2ms)[0m  commit transaction
+Redirected to http://localhost:3000/products/11
+Completed 302 Found in 170ms (ActiveRecord: 155.2ms)
+
+
+Started GET "/products/11" for 127.0.0.1 at 2015-08-21 10:29:35 +0200
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 11]]
+  Rendered products/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 170ms (Views: 166.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-21 10:31:09 +0200
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 131ms (Views: 130.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products/11" for 127.0.0.1 at 2015-08-21 10:31:23 +0200
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 11]]
+  Rendered products/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 124ms (Views: 121.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/11/edit" for 127.0.0.1 at 2015-08-21 10:31:27 +0200
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"11"}
+  [1m[35mProduct Load (0.3ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 11]]
+  Rendered products/_form.html.erb (6.3ms)
+  Rendered products/edit.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 139ms (Views: 136.2ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/products/11" for 127.0.0.1 at 2015-08-21 10:31:40 +0200
+Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"w7qT3MIDJR40ZF0KFbjITX1T09xb0BnDnsRpPHOxjyRZw/Hc1k80SelDWnnKo9ZTNlOrML+1Q8iAAH/cMgyyYA==", "product"=>{"title"=>"Most", "category"=>"Obraz", "description"=>"Most w Brooklynie.", "avatar_cache"=>"", "price"=>"288.0"}, "commit"=>"Update Product", "id"=>"11"}
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 11]]
+Unpermitted parameter: avatar_cache
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mProduct Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "products" WHERE ("products"."title" = 'Most' AND "products"."id" != 11) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "products" SET "price" = ?, "updated_at" = ? WHERE "products"."id" = ?  [["price", 288.0], ["updated_at", "2015-08-21 08:31:40.673806"], ["id", 11]]
+  [1m[36m (163.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/products/11
+Completed 302 Found in 175ms (ActiveRecord: 164.5ms)
+
+
+Started GET "/products/11" for 127.0.0.1 at 2015-08-21 10:31:40 +0200
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[35mProduct Load (0.3ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 11]]
+  Rendered products/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 126ms (Views: 123.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-21 10:31:56 +0200
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (18.9ms)
+Completed 200 OK in 147ms (Views: 145.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-21 10:32:20 +0200
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 129ms (Views: 127.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products/11" for 127.0.0.1 at 2015-08-21 10:32:24 +0200
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 11]]
+  Rendered products/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 121ms (Views: 119.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/products/11/edit" for 127.0.0.1 at 2015-08-21 10:32:27 +0200
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"11"}
+  [1m[35mProduct Load (0.3ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 11]]
+  Rendered products/_form.html.erb (7.6ms)
+  Rendered products/edit.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 143ms (Views: 140.2ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/products/11" for 127.0.0.1 at 2015-08-21 10:32:32 +0200
+Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8kxJOo7GpRrR3b8riigmkEwJrF2xwHndui7AsESriUVoNSs6moq0TQz6uFhVMziOBwnUsVWlI9ak6tZQBRa0AQ==", "product"=>{"title"=>"Most", "category"=>"Obraz", "description"=>"Most w Brooklynie.", "avatar_cache"=>"", "price"=>"288.0", "price2"=>"7"}, "commit"=>"Update Product", "id"=>"11"}
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 11]]
+Unpermitted parameters: avatar_cache, price2
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mProduct Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "products" WHERE ("products"."title" = 'Most' AND "products"."id" != 11) LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/products/11
+Completed 302 Found in 8ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/products/11" for 127.0.0.1 at 2015-08-21 10:32:32 +0200
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 11]]
+  Rendered products/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 123ms (Views: 121.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-21 10:32:35 +0200
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 130ms (Views: 129.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-21 10:34:20 +0200
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.6ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (23.4ms)
+Completed 200 OK in 149ms (Views: 141.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/products/11" for 127.0.0.1 at 2015-08-21 10:34:25 +0200
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[35mProduct Load (0.5ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 11]]
+  Rendered products/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 122ms (Views: 118.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/products/11/edit" for 127.0.0.1 at 2015-08-21 10:34:28 +0200
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 11]]
+  Rendered products/_form.html.erb (6.2ms)
+  Rendered products/edit.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 142ms (Views: 140.5ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/products/11" for 127.0.0.1 at 2015-08-21 10:34:31 +0200
+Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JWJI5nK0JMoiUFpmFGXGSTCPhKYSqw/pftVeLVOblbm/GyrmZvg1nf93XRXLfthXe4/8SvbOVeJgEUjNEiao/Q==", "product"=>{"title"=>"Most", "category"=>"Obraz", "description"=>"Most w Brooklynie.", "avatar_cache"=>"", "price"=>"288.0", "price2"=>"3"}, "commit"=>"Update Product", "id"=>"11"}
+  [1m[35mProduct Load (0.2ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 11]]
+Unpermitted parameter: avatar_cache
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mProduct Exists (0.4ms)[0m  SELECT  1 AS one FROM "products" WHERE ("products"."title" = 'Most' AND "products"."id" != 11) LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "products" SET "price2" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["price2", 3.0], ["updated_at", "2015-08-21 08:34:31.736474"], ["id", 11]]
+  [1m[35m (208.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/products/11
+Completed 302 Found in 224ms (ActiveRecord: 209.7ms)
+
+
+Started GET "/products/11" for 127.0.0.1 at 2015-08-21 10:34:31 +0200
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 11]]
+  Rendered products/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 126ms (Views: 124.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-21 10:34:36 +0200
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.5ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 143ms (Views: 141.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-21 10:35:07 +0200
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 133ms (Views: 132.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-21 10:35:18 +0200
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 198ms (Views: 197.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/products.self-99b0219302a925afe569a92e0dd143cd169972352b772b21d4c16dc46c23181f.css?body=1" for 127.0.0.1 at 2015-08-21 10:35:18 +0200
+
+
+Started GET "/products/11/edit" for 127.0.0.1 at 2015-08-21 10:35:27 +0200
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 11]]
+  Rendered products/_form.html.erb (9.2ms)
+  Rendered products/edit.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 128ms (Views: 126.6ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/products/11" for 127.0.0.1 at 2015-08-21 10:35:40 +0200
+Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4cvmK0dJl/JVGWaunWvTyS6EDbA/YlYnHpfjsUomEWh7soQrUwWGpYg+Yd1CcM3XZYR1XNsHDCwAU/VRC5ssLA==", "product"=>{"title"=>"Most", "category"=>"Obraz", "description"=>"Most w Brooklynie.", "avatar_cache"=>"", "price"=>"400.00", "price2"=>"399.99"}, "commit"=>"Update Product", "id"=>"11"}
+  [1m[35mProduct Load (0.2ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 11]]
+Unpermitted parameter: avatar_cache
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mProduct Exists (0.2ms)[0m  SELECT  1 AS one FROM "products" WHERE ("products"."title" = 'Most' AND "products"."id" != 11) LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "products" SET "price" = ?, "price2" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["price", 400.0], ["price2", 399.99], ["updated_at", "2015-08-21 08:35:40.611315"], ["id", 11]]
+  [1m[35m (176.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/products/11
+Completed 302 Found in 187ms (ActiveRecord: 177.7ms)
+
+
+Started GET "/products/11" for 127.0.0.1 at 2015-08-21 10:35:40 +0200
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 11]]
+  Rendered products/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 133ms (Views: 131.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-21 10:35:43 +0200
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 140ms (Views: 139.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-21 10:37:34 +0200
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 130ms (Views: 129.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-21 10:38:06 +0200
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.4ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 147ms (Views: 145.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-21 10:38:30 +0200
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 133ms (Views: 131.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-21 10:38:47 +0200
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.5ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 135ms (Views: 132.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-21 10:39:43 +0200
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (14.8ms)
+Completed 200 OK in 150ms (Views: 149.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-21 10:40:20 +0200
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.4ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (14.8ms)
+Completed 200 OK in 136ms (Views: 135.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-21 10:41:14 +0200
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 148ms (Views: 146.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-21 10:41:46 +0200
+Processing by ProductsController#index as HTML
+  Rendered products/index.html.erb within layouts/application (2.1ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/home/patrycja/workspace/hello-world/app/views/products/index.html.erb:16: syntax error, unexpected ')', expecting keyword_end
+...t.price2)  if @product.avatar?);@output_buffer.safe_append='...
+...                               ^):
+  app/views/products/index.html.erb:16: syntax error, unexpected ')', expecting keyword_end
+
+
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (15.0ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.0ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (47.4ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (28.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (57.1ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-21 10:43:44 +0200
+Processing by ProductsController#index as HTML
+  Rendered products/index.html.erb within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/home/patrycja/workspace/hello-world/app/views/products/index.html.erb:16: syntax error, unexpected tLABEL
+...tput_buffer.append=( (Promocja: product.price2)  if @product...
+...                               ^):
+  app/views/products/index.html.erb:16: syntax error, unexpected tLABEL
+
+
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (15.3ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.4ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (48.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (29.3ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (58.7ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-21 10:44:23 +0200
+Processing by ProductsController#index as HTML
+  Rendered products/index.html.erb within layouts/application (2.1ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/home/patrycja/workspace/hello-world/app/views/products/index.html.erb:16: syntax error, unexpected tLABEL
+...utput_buffer.append=( Promocja: (product.price2)  if @produc...
+...                               ^):
+  app/views/products/index.html.erb:16: syntax error, unexpected tLABEL
+
+
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (15.9ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.9ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (48.9ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (28.8ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (57.7ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-21 10:44:34 +0200
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (9.1ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined method `price2?' for nil:NilClass):
+    13: <dt><%= product.title %></dt>
+    14: <dd><%= truncate(strip_tags(product.description), length: 80) %></dd>
+    15: <dk><%= product.price %></dk><br />
+    16: <h4>PROMOCJA: <dr><%= product.price2  if @product.price2?%></dr></h4>
+    17: </dl>
+    18: </td>
+    19: <td class="list_actions">
+  app/views/products/index.html.erb:16:in `block in _app_views_products_index_html_erb___3061734026152287168_70336178679220'
+  app/views/products/index.html.erb:5:in `_app_views_products_index_html_erb___3061734026152287168_70336178679220'
+
+
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (15.4ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.2ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (49.4ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (29.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (59.0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-21 10:44:56 +0200
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.7ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (8.9ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.7ms)
+
+ActionView::Template::Error (undefined method `price2?' for nil:NilClass):
+    13: <dt><%= product.title %></dt>
+    14: <dd><%= truncate(strip_tags(product.description), length: 80) %></dd>
+    15: <dk><%= product.price %></dk><br />
+    16: <h4>PROMOCJA: <dr><%= (product.price2)  if @product.price2?%></dr></h4>
+    17: </dl>
+    18: </td>
+    19: <td class="list_actions">
+  app/views/products/index.html.erb:16:in `block in _app_views_products_index_html_erb___3061734026152287168_70336173630400'
+  app/views/products/index.html.erb:5:in `_app_views_products_index_html_erb___3061734026152287168_70336173630400'
+
+
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (39.4ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.8ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (72.3ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (28.6ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (57.3ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-21 10:45:15 +0200
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.5ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (7.5ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.5ms)
+
+ActionView::Template::Error (undefined method `price2?' for nil:NilClass):
+    13: <dt><%= product.title %></dt>
+    14: <dd><%= truncate(strip_tags(product.description), length: 80) %></dd>
+    15: <dk><%= product.price %></dk><br />
+    16: <h4>PROMOCJA: <dr><%= (@product.price2)  if @product.price2?%></dr></h4>
+    17: </dl>
+    18: </td>
+    19: <td class="list_actions">
+  app/views/products/index.html.erb:16:in `block in _app_views_products_index_html_erb___3061734026152287168_70336177762060'
+  app/views/products/index.html.erb:5:in `_app_views_products_index_html_erb___3061734026152287168_70336177762060'
+
+
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (14.7ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.2ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (48.1ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (29.2ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (58.6ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-21 10:45:29 +0200
+Processing by ProductsController#index as HTML
+  Rendered products/index.html.erb within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/home/patrycja/workspace/hello-world/app/views/products/index.html.erb:16: syntax error, unexpected '<'
+...ffer.append=( @product.price2></dr></h4>
+...                               ^
+/home/patrycja/workspace/hello-world/app/views/products/index.html.erb:16: unknown regexp option - h
+/home/patrycja/workspace/hello-world/app/views/products/index.html.erb:16: syntax error, unexpected tINTEGER, expecting ')'
+...end=( @product.price2></dr></h4>
+...                               ^
+/home/patrycja/workspace/hello-world/app/views/products/index.html.erb:18: unknown regexp options - td
+/home/patrycja/workspace/hello-world/app/views/products/index.html.erb:19: syntax error, unexpected '<'
+<td class="list_actions">
+ ^
+/home/patrycja/workspace/hello-world/app/views/products/index.html.erb:20: syntax error, unexpected '<'
+<%= link_to 'Show', product );@output_buffer.safe_append='<br/>
+ ^
+/home/patrycja/workspace/hello-world/app/views/products/index.html.erb:26: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; end 
+             ^
+/home/patrycja/workspace/hello-world/app/views/products/index.html.erb:33: syntax error, unexpected keyword_ensure, expecting ')'
+/home/patrycja/workspace/hello-world/app/views/products/index.html.erb:35: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/products/index.html.erb:16: syntax error, unexpected '<'
+  app/views/products/index.html.erb:16: unknown regexp option - h
+  app/views/products/index.html.erb:16: syntax error, unexpected tINTEGER, expecting ')'
+  app/views/products/index.html.erb:18: unknown regexp options - td
+  app/views/products/index.html.erb:19: syntax error, unexpected '<'
+  app/views/products/index.html.erb:20: syntax error, unexpected '<'
+  app/views/products/index.html.erb:26: syntax error, unexpected keyword_end, expecting ')'
+  app/views/products/index.html.erb:33: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/products/index.html.erb:35: syntax error, unexpected keyword_end, expecting ')'
+
+
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (16.2ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.0ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (49.7ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (28.4ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (56.6ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-21 10:45:40 +0200
+Processing by ProductsController#index as HTML
+  Rendered products/index.html.erb within layouts/application (2.1ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/home/patrycja/workspace/hello-world/app/views/products/index.html.erb:16: syntax error, unexpected '<'
+...uffer.append=( product.price2></dr></h4>
+...                               ^
+/home/patrycja/workspace/hello-world/app/views/products/index.html.erb:16: unknown regexp option - h
+/home/patrycja/workspace/hello-world/app/views/products/index.html.erb:16: syntax error, unexpected tINTEGER, expecting ')'
+...pend=( product.price2></dr></h4>
+...                               ^
+/home/patrycja/workspace/hello-world/app/views/products/index.html.erb:18: unknown regexp options - td
+/home/patrycja/workspace/hello-world/app/views/products/index.html.erb:19: syntax error, unexpected '<'
+<td class="list_actions">
+ ^
+/home/patrycja/workspace/hello-world/app/views/products/index.html.erb:20: syntax error, unexpected '<'
+<%= link_to 'Show', product );@output_buffer.safe_append='<br/>
+ ^
+/home/patrycja/workspace/hello-world/app/views/products/index.html.erb:26: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; end 
+             ^
+/home/patrycja/workspace/hello-world/app/views/products/index.html.erb:33: syntax error, unexpected keyword_ensure, expecting ')'
+/home/patrycja/workspace/hello-world/app/views/products/index.html.erb:35: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/products/index.html.erb:16: syntax error, unexpected '<'
+  app/views/products/index.html.erb:16: unknown regexp option - h
+  app/views/products/index.html.erb:16: syntax error, unexpected tINTEGER, expecting ')'
+  app/views/products/index.html.erb:18: unknown regexp options - td
+  app/views/products/index.html.erb:19: syntax error, unexpected '<'
+  app/views/products/index.html.erb:20: syntax error, unexpected '<'
+  app/views/products/index.html.erb:26: syntax error, unexpected keyword_end, expecting ')'
+  app/views/products/index.html.erb:33: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/products/index.html.erb:35: syntax error, unexpected keyword_end, expecting ')'
+
+
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (16.4ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.1ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (50.1ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (28.8ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (58.1ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-21 10:46:04 +0200
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.5ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (17.2ms)
+Completed 200 OK in 149ms (Views: 147.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-21 10:46:31 +0200
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 129ms (Views: 127.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/all_products/all.html" for 127.0.0.1 at 2015-08-21 10:46:38 +0200
+Processing by AllProductsController#all as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."category" = ?[0m  [["category", "Obraz"]]
+  Rendered all_products/all.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 125ms (Views: 123.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-21 10:46:52 +0200
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 137ms (Views: 136.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-21 10:49:35 +0200
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 126ms (Views: 124.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/all_products/all.html" for 127.0.0.1 at 2015-08-21 10:49:40 +0200
+Processing by AllProductsController#all as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE "products"."category" = ?  [["category", "Obraz"]]
+  Rendered all_products/all.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 133ms (Views: 131.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/meble/index" for 127.0.0.1 at 2015-08-21 10:49:51 +0200
+Processing by MebleController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."category" = ?[0m  [["category", "Meble"]]
+  Rendered meble/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 120ms (Views: 118.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/all_products/all.html" for 127.0.0.1 at 2015-08-21 10:49:55 +0200
+Processing by AllProductsController#all as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE "products"."category" = ?  [["category", "Obraz"]]
+  Rendered all_products/all.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 123ms (Views: 120.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/all_products/all.html" for 127.0.0.1 at 2015-08-21 10:52:11 +0200
+Processing by AllProductsController#all as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."category" = ?[0m  [["category", "Obraz"]]
+  Rendered all_products/all.html.erb within layouts/application (6.1ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined method `price2?' for nil:NilClass):
+    11: <dt><%= product.title %></dt>
+    12: <dd><%= truncate(strip_tags(product.description), length: 80) %></dd>
+    13: <dt><%= product.price %></dt>
+    14: <dr><%= (@product.price2) if @product.price2? %></dr>
+    15: </dl>
+    16: </td>
+    17: <td class="list_actions">
+  app/views/all_products/all.html.erb:14:in `block in _app_views_all_products_all_html_erb__115481139955607593_35090740'
+  app/views/all_products/all.html.erb:3:in `_app_views_all_products_all_html_erb__115481139955607593_35090740'
+
+
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (14.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.9ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (47.2ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (29.1ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (57.9ms)
+
+
+Started GET "/all_products/all.html" for 127.0.0.1 at 2015-08-21 11:04:33 +0200
+Processing by AllProductsController#all as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE "products"."category" = ?  [["category", "Obraz"]]
+  Rendered all_products/all.html.erb within layouts/application (4.7ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined method `price2?' for nil:NilClass):
+    11: <dt><%= product.title %></dt>
+    12: <dd><%= truncate(strip_tags(product.description), length: 80) %></dd>
+    13: <dt><%= product.price %></dt>
+    14: <dr><%= (@product.price2) if @product.price2? %></dr>
+    15: </dl>
+    16: </td>
+    17: <td class="list_actions">
+  app/views/all_products/all.html.erb:14:in `block in _app_views_all_products_all_html_erb__115481139955607593_35090740'
+  app/views/all_products/all.html.erb:3:in `_app_views_all_products_all_html_erb__115481139955607593_35090740'
+
+
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (14.2ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (46.4ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (28.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (57.0ms)
+
+
+Started GET "/all_products/all.html" for 127.0.0.1 at 2015-08-21 11:29:08 +0200
+Processing by AllProductsController#all as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."category" = ?[0m  [["category", "Obraz"]]
+  Rendered all_products/all.html.erb within layouts/application (16.1ms)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 1.1ms)
+
+ActionView::Template::Error (undefined method `price2?' for nil:NilClass):
+    11: <dt><%= product.title %></dt>
+    12: <dd><%= truncate(strip_tags(product.description), length: 80) %></dd>
+    13: <dt><%= product.price %></dt>
+    14: <dr><%= (@product.price2) if @product.price2? %></dr>
+    15: </dl>
+    16: </td>
+    17: <td class="list_actions">
+  app/views/all_products/all.html.erb:14:in `block in _app_views_all_products_all_html_erb__115481139955607593_35090740'
+  app/views/all_products/all.html.erb:3:in `_app_views_all_products_all_html_erb__115481139955607593_35090740'
+
+
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (16.4ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.3ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (51.7ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (30.6ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (60.8ms)
+
+
+Started GET "/all_products/all.html" for 127.0.0.1 at 2015-08-21 11:29:10 +0200
+Processing by AllProductsController#all as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products" WHERE "products"."category" = ?  [["category", "Obraz"]]
+  Rendered all_products/all.html.erb within layouts/application (8.2ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined method `price2?' for nil:NilClass):
+    11: <dt><%= product.title %></dt>
+    12: <dd><%= truncate(strip_tags(product.description), length: 80) %></dd>
+    13: <dt><%= product.price %></dt>
+    14: <dr><%= (@product.price2) if @product.price2? %></dr>
+    15: </dl>
+    16: </td>
+    17: <td class="list_actions">
+  app/views/all_products/all.html.erb:14:in `block in _app_views_all_products_all_html_erb__115481139955607593_35090740'
+  app/views/all_products/all.html.erb:3:in `_app_views_all_products_all_html_erb__115481139955607593_35090740'
+
+
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (14.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.7ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (47.7ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (29.3ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (58.9ms)
+
+
+Started GET "/all_products/all.html" for 127.0.0.1 at 2015-08-21 11:29:39 +0200
+Processing by AllProductsController#all as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."category" = ?[0m  [["category", "Obraz"]]
+  Rendered all_products/all.html.erb within layouts/application (4.6ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined method `price2?' for nil:NilClass):
+    11: <dt><%= product.title %></dt>
+    12: <dd><%= truncate(strip_tags(product.description), length: 80) %></dd>
+    13: <dt><%= product.price %></dt>
+    14: <dr><%= (@product.price2) if @product.price2? %></dr>
+    15: </dl>
+    16: </td>
+    17: <td class="list_actions">
+  app/views/all_products/all.html.erb:14:in `block in _app_views_all_products_all_html_erb__115481139955607593_35090740'
+  app/views/all_products/all.html.erb:3:in `_app_views_all_products_all_html_erb__115481139955607593_35090740'
+
+
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (15.8ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.0ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (49.1ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (29.2ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (58.5ms)
+
+
+Started GET "/all_products/all.html" for 127.0.0.1 at 2015-08-21 11:30:24 +0200
+Processing by AllProductsController#all as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE "products"."category" = ?  [["category", "Obraz"]]
+  Rendered all_products/all.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 127ms (Views: 125.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-21 11:30:26 +0200
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE ("products"."price2" IS NOT NULL)[0m
+  Rendered products/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 121ms (Views: 119.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-21 11:31:06 +0200
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.6ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (37.9ms)
+Completed 200 OK in 162ms (Views: 153.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-21 11:34:43 +0200
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE ("products"."price2" IS NOT NULL)
+  Rendered products/index.html.erb within layouts/application (14.4ms)
+Completed 200 OK in 136ms (Views: 134.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/products/7/edit" for 127.0.0.1 at 2015-08-21 11:34:50 +0200
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 7]]
+  Rendered products/_form.html.erb (7.6ms)
+  Rendered products/edit.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 126ms (Views: 124.1ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/products/7" for 127.0.0.1 at 2015-08-21 11:34:55 +0200
+Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uaTvIW+RWu7t0Gr/5FHz0MfcJvx564JzWJkZuAiDO70j3Y0he91LuTD3bYw7Su3OjNxeEJ2O2HhGXQ9YST4G+Q==", "product"=>{"title"=>"B jak Barakuda", "category"=>"Ksiazki", "description"=>"Ksiażka dla dzieci.", "avatar_cache"=>"", "price"=>"19.99", "price2"=>"10.00"}, "commit"=>"Update Product", "id"=>"7"}
+  [1m[35mProduct Load (0.2ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 7]]
+Unpermitted parameter: avatar_cache
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mProduct Exists (0.2ms)[0m  SELECT  1 AS one FROM "products" WHERE ("products"."title" = 'B jak Barakuda' AND "products"."id" != 7) LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "products" SET "price2" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["price2", 10.0], ["updated_at", "2015-08-21 09:34:55.825785"], ["id", 7]]
+  [1m[35m (186.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/products/7
+Completed 302 Found in 199ms (ActiveRecord: 187.0ms)
+
+
+Started GET "/products/7" for 127.0.0.1 at 2015-08-21 11:34:56 +0200
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 7]]
+  Rendered products/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 122ms (Views: 120.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-21 11:34:58 +0200
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.5ms)[0m  SELECT "products".* FROM "products"
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE ("products"."price2" IS NOT NULL)[0m
+  Rendered products/index.html.erb within layouts/application (16.1ms)
+Completed 200 OK in 132ms (Views: 129.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/products/7/edit" for 127.0.0.1 at 2015-08-21 11:35:17 +0200
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mProduct Load (0.3ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 7]]
+  Rendered products/_form.html.erb (5.7ms)
+  Rendered products/edit.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 126ms (Views: 123.7ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/products/7" for 127.0.0.1 at 2015-08-21 11:35:22 +0200
+Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+lAUO7b/u51uMcsuBgx8Gx28PBcjYqmVKHa5RVaXstdgKXY7orOqyrMWzF3ZF2IFVrxE+8cH8542sq+lFyqPkw==", "product"=>{"title"=>"B jak Barakuda", "category"=>"Ksiazki", "description"=>"Ksiażka dla dzieci.", "avatar_cache"=>"", "price"=>"19.99", "price2"=>"9.99"}, "commit"=>"Update Product", "id"=>"7"}
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 7]]
+Unpermitted parameter: avatar_cache
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mProduct Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "products" WHERE ("products"."title" = 'B jak Barakuda' AND "products"."id" != 7) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "products" SET "price2" = ?, "updated_at" = ? WHERE "products"."id" = ?  [["price2", 9.99], ["updated_at", "2015-08-21 09:35:22.467231"], ["id", 7]]
+  [1m[36m (156.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/products/7
+Completed 302 Found in 168ms (ActiveRecord: 157.8ms)
+
+
+Started GET "/products/7" for 127.0.0.1 at 2015-08-21 11:35:22 +0200
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mProduct Load (0.2ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 7]]
+  Rendered products/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 129ms (Views: 127.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-21 11:35:24 +0200
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  [1m[35mProduct Load (0.5ms)[0m  SELECT "products".* FROM "products" WHERE ("products"."price2" IS NOT NULL)
+  Rendered products/index.html.erb within layouts/application (20.6ms)
+Completed 200 OK in 153ms (Views: 151.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-21 11:36:44 +0200
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.5ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  [1m[35mProduct Load (0.5ms)[0m  SELECT "products".* FROM "products" WHERE ("products"."price2" IS NOT NULL)
+  Rendered products/index.html.erb within layouts/application (18.2ms)
+Completed 200 OK in 136ms (Views: 133.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-21 11:38:36 +0200
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (13.3ms)
+Completed 200 OK in 144ms (Views: 143.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-21 11:42:45 +0200
+Processing by ProductsController#index as HTML
+  Rendered products/index.html.erb within layouts/application (2.6ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/home/patrycja/workspace/hello-world/app/views/products/index.html.erb:17: syntax error, unexpected tLABEL
+...tput_buffer.append=( (PROMOCJA:  <%= @product.price2) if @pr...
+...                               ^
+/home/patrycja/workspace/hello-world/app/views/products/index.html.erb:28: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; end 
+             ^
+/home/patrycja/workspace/hello-world/app/views/products/index.html.erb:37: syntax error, unexpected keyword_ensure, expecting ')'
+/home/patrycja/workspace/hello-world/app/views/products/index.html.erb:39: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/products/index.html.erb:17: syntax error, unexpected tLABEL
+  app/views/products/index.html.erb:28: syntax error, unexpected keyword_end, expecting ')'
+  app/views/products/index.html.erb:37: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/products/index.html.erb:39: syntax error, unexpected keyword_end, expecting ')'
+
+
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (15.6ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.3ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (49.7ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (29.6ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (59.2ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-21 11:43:32 +0200
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 133ms (Views: 131.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-21 11:45:56 +0200
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (6.0ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined method `price2?' for nil:NilClass):
+    13: <dt><%= product.title %></dt>
+    14: <dd><%= truncate(strip_tags(product.description), length: 80) %></dd>
+    15: <dk><%= product.price %></dk><br />
+    16: <%= (@product.price2) if @product.price2? %>
+    17: </dl>
+    18: </td>
+    19: 
+  app/views/products/index.html.erb:16:in `block in _app_views_products_index_html_erb___3061734026152287168_70335973461640'
+  app/views/products/index.html.erb:5:in `_app_views_products_index_html_erb___3061734026152287168_70335973461640'
+
+
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (13.9ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.8ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (46.4ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (29.0ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (58.2ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-21 11:46:18 +0200
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 146ms (Views: 144.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-21 11:46:38 +0200
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (13.8ms)
+Completed 200 OK in 145ms (Views: 144.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-21 11:46:52 +0200
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 133ms (Views: 131.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-21 11:47:11 +0200
+Processing by ProductsController#index as HTML
+  Rendered products/index.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/home/patrycja/workspace/hello-world/app/views/products/index.html.erb:16: syntax error, unexpected tLABEL
+...utput_buffer.append=( PROMOCJA: (product.price2) if product....
+...                               ^):
+  app/views/products/index.html.erb:16: syntax error, unexpected tLABEL
+
+
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (16.2ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.8ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (50.4ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (29.7ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (59.1ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-21 11:47:29 +0200
+Processing by ProductsController#index as HTML
+  Rendered products/index.html.erb within layouts/application (2.5ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/home/patrycja/workspace/hello-world/app/views/products/index.html.erb:16: syntax error, unexpected tLABEL
+...tput_buffer.append=( (PROMOCJA: product.price2) if product.p...
+...                               ^):
+  app/views/products/index.html.erb:16: syntax error, unexpected tLABEL
+
+
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (14.1ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.7ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (45.9ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (28.3ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (56.7ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-21 11:48:38 +0200
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 126ms (Views: 124.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-21 11:48:58 +0200
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 149ms (Views: 146.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-21 11:49:51 +0200
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.5ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (16.3ms)
+Completed 200 OK in 143ms (Views: 140.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/products/8/edit" for 127.0.0.1 at 2015-08-21 11:50:08 +0200
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 8]]
+  Rendered products/_form.html.erb (5.7ms)
+  Rendered products/edit.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 127ms (Views: 125.6ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/products/8" for 127.0.0.1 at 2015-08-21 11:50:15 +0200
+Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wXckIM8efaaa7pPiPaVYe1kCewvpWDxBpr8/FeFmmChbDkYg21Js8UfJlJHivkZlEgID5w09Zkq4eyn1oNulbA==", "product"=>{"title"=>"ZUZA", "category"=>"Ksiazki", "description"=>"Ksiażka dla dzieci.", "avatar_cache"=>"", "price"=>"29.99", "price2"=>"66"}, "commit"=>"Update Product", "id"=>"8"}
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 8]]
+Unpermitted parameter: avatar_cache
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mProduct Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "products" WHERE ("products"."title" = 'ZUZA' AND "products"."id" != 8) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "products" SET "price2" = ?, "updated_at" = ? WHERE "products"."id" = ?  [["price2", 66.0], ["updated_at", "2015-08-21 09:50:15.176004"], ["id", 8]]
+  [1m[36m (160.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/products/8
+Completed 302 Found in 173ms (ActiveRecord: 161.0ms)
+
+
+Started GET "/products/8" for 127.0.0.1 at 2015-08-21 11:50:15 +0200
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mProduct Load (0.2ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 8]]
+  Rendered products/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 128ms (Views: 126.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-21 11:50:17 +0200
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (14.2ms)
+Completed 200 OK in 135ms (Views: 133.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-21 11:51:08 +0200
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (9.1ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (no implicit conversion of BigDecimal into String):
+    13: <dt><%= product.title %></dt>
+    14: <dd><%= truncate(strip_tags(product.description), length: 80) %></dd>
+    15: <dk><%= product.price %></dk><br />
+    16: <dr><%= ("Promocja"+product.price2) if product.price2? %></dr>
+    17: </dl>
+    18: </td>
+    19: 
+  app/views/products/index.html.erb:16:in `+'
+  app/views/products/index.html.erb:16:in `block in _app_views_products_index_html_erb___3061734026152287168_17714480'
+  app/views/products/index.html.erb:5:in `_app_views_products_index_html_erb___3061734026152287168_17714480'
+
+
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (13.7ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.4ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (45.0ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (28.8ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (57.2ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-21 11:51:28 +0200
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 118ms (Views: 116.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-21 11:51:50 +0200
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (17.2ms)
+Completed 200 OK in 165ms (Views: 163.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-21 11:52:05 +0200
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (13.8ms)
+Completed 200 OK in 138ms (Views: 136.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products/8/edit" for 127.0.0.1 at 2015-08-21 11:52:14 +0200
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mProduct Load (0.2ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 8]]
+  Rendered products/_form.html.erb (5.7ms)
+  Rendered products/edit.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 122ms (Views: 120.9ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/products/8" for 127.0.0.1 at 2015-08-21 11:52:25 +0200
+Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"slk6uejVeaiArfT1Wu+ARUptHEeafrL102zH241XonsoIFi5/Jlo/12K84aF9J5bAW1kq34b6P7NqNE7zOqfPw==", "product"=>{"title"=>"ZUZA", "category"=>"Ksiazki", "description"=>"Ksiażka dla dzieci.", "avatar_cache"=>"", "price"=>"29.99", "price2"=>"6.99"}, "commit"=>"Update Product", "id"=>"8"}
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 8]]
+Unpermitted parameter: avatar_cache
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mProduct Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "products" WHERE ("products"."title" = 'ZUZA' AND "products"."id" != 8) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "products" SET "price2" = ?, "updated_at" = ? WHERE "products"."id" = ?  [["price2", 6.99], ["updated_at", "2015-08-21 09:52:25.906275"], ["id", 8]]
+  [1m[36m (212.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/products/8
+Completed 302 Found in 223ms (ActiveRecord: 213.0ms)
+
+
+Started GET "/products/8" for 127.0.0.1 at 2015-08-21 11:52:26 +0200
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mProduct Load (0.3ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 8]]
+  Rendered products/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 132ms (Views: 129.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-21 11:52:29 +0200
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 130ms (Views: 128.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/all_products/all.html" for 127.0.0.1 at 2015-08-21 11:52:43 +0200
+Processing by AllProductsController#all as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products" WHERE "products"."category" = ?  [["category", "Obraz"]]
+  Rendered all_products/all.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 121ms (Views: 118.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/all_products/all.html" for 127.0.0.1 at 2015-08-21 11:53:03 +0200
+Processing by AllProductsController#all as HTML
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."category" = ?[0m  [["category", "Obraz"]]
+  Rendered all_products/all.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 137ms (Views: 128.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/all_products/all.html" for 127.0.0.1 at 2015-08-21 11:53:59 +0200
+Processing by AllProductsController#all as HTML
+  Rendered all_products/all.html.erb within layouts/application (3.2ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: 
+    3: 
+    4: <table>
+    5: <% @products.each do |product| %>
+    6: <tr class="<%= cycle('list_line_odd', 'list_line_even') %>">
+    7: <td>
+    8: <%= image_tag(product.avatar_url, class: 'list_image') %>
+  app/views/all_products/all.html.erb:5:in `_app_views_all_products_all_html_erb__115481139955607593_70335971505520'
+
+
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (13.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.7ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (46.1ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (29.6ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /home/patrycja/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (59.2ms)
+
+
+Started GET "/all_products/all.html" for 127.0.0.1 at 2015-08-21 11:54:41 +0200
+Processing by AllProductsController#all as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE "products"."category" = ?  [["category", "Obraz"]]
+  Rendered all_products/all.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 133ms (Views: 132.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/all_products/all.html" for 127.0.0.1 at 2015-08-21 11:55:20 +0200
+Processing by AllProductsController#all as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."category" = ?[0m  [["category", "Obraz"]]
+  Rendered all_products/all.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 219ms (Views: 217.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/all_products.self-a0f8c9e561382ac9cdda04f3f2ba8877f3cf7b6ad2d7c9fa56e82c6a72196f68.css?body=1" for 127.0.0.1 at 2015-08-21 11:55:20 +0200
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-21 11:55:29 +0200
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 131ms (Views: 130.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-21 12:29:29 +0200
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 142ms (Views: 140.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books/all.html" for 127.0.0.1 at 2015-08-21 12:29:33 +0200
+Processing by BooksController#all as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products" WHERE "products"."category" = ?  [["category", "Ksiazki"]]
+  Rendered books/all.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 131ms (Views: 129.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books/all.html" for 127.0.0.1 at 2015-08-21 12:30:16 +0200
+Processing by BooksController#all as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."category" = ?[0m  [["category", "Ksiazki"]]
+  Rendered books/all.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 275ms (Views: 274.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/books.self-87ade41be4a485606f895f176340b5b773bfe1a1b2699bfef37505e6c9d4e002.css?body=1" for 127.0.0.1 at 2015-08-21 12:30:16 +0200
+
+
+Started GET "/assets/elektronika.self-91240bbb2d72120e16cafc514da0b0bccfe03ced355014255b4f41a3db866681.css?body=1" for 127.0.0.1 at 2015-08-21 12:30:16 +0200
+
+
+Started GET "/assets/meble.self-797a07c2d72a722a847f3b561d80fa92522ce899aab210db5178c6f3b3294780.css?body=1" for 127.0.0.1 at 2015-08-21 12:30:16 +0200
+
+
+Started GET "/elektronika/index.html" for 127.0.0.1 at 2015-08-21 12:30:20 +0200
+Processing by ElektronikaController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE "products"."category" = ?  [["category", "Elektronika"]]
+  Rendered elektronika/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 139ms (Views: 136.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books/all.html" for 127.0.0.1 at 2015-08-21 12:30:25 +0200
+Processing by BooksController#all as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."category" = ?[0m  [["category", "Ksiazki"]]
+  Rendered books/all.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 136ms (Views: 134.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/all_products/all.html" for 127.0.0.1 at 2015-08-21 12:30:28 +0200
+Processing by AllProductsController#all as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE "products"."category" = ?  [["category", "Obraz"]]
+  Rendered all_products/all.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 153ms (Views: 151.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/meble/index" for 127.0.0.1 at 2015-08-21 12:30:32 +0200
+Processing by MebleController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."category" = ?[0m  [["category", "Meble"]]
+  Rendered meble/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 155ms (Views: 153.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-21 12:30:35 +0200
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 148ms (Views: 145.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-21 12:30:51 +0200
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.5ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (18.3ms)
+Completed 200 OK in 173ms (Views: 171.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/meble/index" for 127.0.0.1 at 2015-08-21 12:31:14 +0200
+Processing by MebleController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE "products"."category" = ?  [["category", "Meble"]]
+  Rendered meble/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 202ms (Views: 199.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/meble/index" for 127.0.0.1 at 2015-08-21 12:31:14 +0200
+Processing by MebleController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."category" = ?[0m  [["category", "Meble"]]
+  Rendered meble/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 130ms (Views: 128.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/meble.self-b17bc414213f8715330990d54b38abc98d6c852821458b59cc86a3891dfa3ed8.css?body=1" for 127.0.0.1 at 2015-08-21 12:31:14 +0200
+
+
+Started GET "/books/all.html" for 127.0.0.1 at 2015-08-21 12:31:38 +0200
+Processing by BooksController#all as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products" WHERE "products"."category" = ?  [["category", "Ksiazki"]]
+  Rendered books/all.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 259ms (Views: 257.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books/all.html" for 127.0.0.1 at 2015-08-21 12:31:39 +0200
+Processing by BooksController#all as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."category" = ?[0m  [["category", "Ksiazki"]]
+  Rendered books/all.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 131ms (Views: 130.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/all_products.self-2615289393f4777424fef83649a2e0aef4377ff387ef6fc115ce2c41bb64b319.css?body=1" for 127.0.0.1 at 2015-08-21 12:31:39 +0200
+
+
+Started GET "/assets/books.self-930862896cf634e77b6c2ac48aff484f80463cdd3ca3a84590983ee99485d0f1.css?body=1" for 127.0.0.1 at 2015-08-21 12:31:39 +0200
+
+
+Started GET "/assets/elektronika.self-92628e82594815f7e274a5384f00da8bcca75f1d9244f519f63c354dcd19e049.css?body=1" for 127.0.0.1 at 2015-08-21 12:31:39 +0200
+
+
+Started GET "/elektronika/index.html" for 127.0.0.1 at 2015-08-21 12:31:42 +0200
+Processing by ElektronikaController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE "products"."category" = ?  [["category", "Elektronika"]]
+  Rendered elektronika/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 136ms (Views: 134.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/all_products/all.html" for 127.0.0.1 at 2015-08-21 12:31:44 +0200
+Processing by AllProductsController#all as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."category" = ?[0m  [["category", "Obraz"]]
+  Rendered all_products/all.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 114ms (Views: 112.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/meble/index" for 127.0.0.1 at 2015-08-21 12:31:49 +0200
+Processing by MebleController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE "products"."category" = ?  [["category", "Meble"]]
+  Rendered meble/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 122ms (Views: 119.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2015-08-21 12:31:52 +0200
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 147ms (Views: 145.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/kontakt/show" for 127.0.0.1 at 2015-08-21 12:32:03 +0200
+Processing by KontaktController#show as HTML
+  Rendered kontakt/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 119ms (Views: 118.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-08-21 12:32:05 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendered users/shared/_links.html.erb (0.6ms)
+  Rendered users/sessions/new.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 144ms (Views: 128.4ms | ActiveRecord: 0.4ms)
+>>>>>>> ccd1657b0d68d58e3b7cdebc71994da6fb37d74c

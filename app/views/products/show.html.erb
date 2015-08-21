@@ -26,5 +26,10 @@
   <%= @product.price %>
 </p>
 
+<p>
+  <strong>New price:</strong>
+  <%= @product.price2 %>
+</p>
+
 <%= link_to 'Edit', edit_product_path(@product) %> |
 <%= link_to 'Back', products_path %>
