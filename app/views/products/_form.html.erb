@@ -1,5 +1,6 @@
 <%= form_for @product, html: { multipart: true }  do |f| %>
   <% if @product.errors.any? %>
+  
     <div id="error_explanation">
       <h2><%= pluralize(@product.errors.count, "error") %> prohibited this product from being saved:</h2>
 
@@ -38,6 +39,7 @@
   </div>
 
    <div class="field">
+   <%= (@product.price2) if @product.price2? %>
     <%= f.label :price2 %><br>
     <%= f.text_field :price2 %>
   </div>
@@ -45,4 +47,5 @@
   <div class="actions">
     <%= f.submit %>
   </div>
+
 <% end %>

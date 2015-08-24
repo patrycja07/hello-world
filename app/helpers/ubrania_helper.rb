@@ -1,0 +1,2 @@
+module UbraniaHelper
+end

@@ -34,9 +34,10 @@ data: { confirm: 'Are you sure?' } %>
 
 <td class="list_button">
 
-
+<% if current_admin %>
 <td class="list_button"><center>
 <%= link_to 'New product', new_product_path %>
 </center>
+<% end %>
 
 </td>

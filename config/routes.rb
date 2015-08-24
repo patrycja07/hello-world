@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'ubrania/index'
+
   get 'paintings_en/index'
 
   get 'meble_en/index'
@@ -15,6 +17,7 @@ Rails.application.routes.draw do
   get 'kontakt/show'
 
   get 'meble/index'
+  get 'ubrania/index'
 
   get 'all_products/all' => 'all_products#all', as: 'all_products'
   get 'books/all' => 'books#all', as: 'books'
