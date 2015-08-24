@@ -1,8 +1,7 @@
-<h1><center>Wszystkie produkty </center></h1>
-
+<h1>Twój koszyk </h1>
 
 <table>
-<% @products.each do |product| %>
+<% @product.each do |product| %>
 <tr class="<%= cycle('list_line_odd', 'list_line_even') %>">
 <td>
 <%= image_tag(product.avatar_url, class: 'list_image') %>
@@ -20,25 +19,9 @@
 <td class="list_actions">
 
 <%= link_to 'Show', product %><br/>
-<%= link_to 'Add', add_product_path(product)%><br/>
-<% if current_admin %>
-<%= link_to 'Edit', edit_product_path(product) %><br/>
 <%= link_to 'Destroy', product, method: :delete,
 data: { confirm: 'Are you sure?' } %>
-<% end %>
 </td>
 </tr>
 <% end %>
 </table>
-
-<br />
-
-<td class="list_button">
-
-<% if current_admin %>
-<td class="list_button"><center>
-<%= link_to 'New product', new_product_path %>
-</center>
-<% end %>
-
-</td>

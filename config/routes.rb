@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'dodaj_do_koszyka/index'
+
   get 'ubrania/index'
 
   get 'paintings_en/index'
@@ -13,8 +15,11 @@ Rails.application.routes.draw do
 
   get 'application_en/show'
 
+
+
   devise_for :admins
   get 'kontakt/show'
+  get 'koszyk/index'
 
   get 'meble/index'
   get 'ubrania/index'
@@ -22,7 +27,13 @@ Rails.application.routes.draw do
   get 'all_products/all' => 'all_products#all', as: 'all_products'
   get 'books/all' => 'books#all', as: 'books'
   get 'elektronika/index' => 'elektronika#index', as: 'elektronika'
-  resources :products
+
+
+  resources :products do
+    member do
+      get 'add'
+    end 
+  end
   devise_for :users
 
   # The priority is based upon order of creation: first created -> highest priority.

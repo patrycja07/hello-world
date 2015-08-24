@@ -1,6 +1,13 @@
 class ProductsController < ApplicationController
   before_action :set_product, only: [:show, :edit, :update, :destroy]
 
+  def add
+    @product = Product.find(params[:id])
+    @product.update_attribute(:check, "true")
+    flash[:notice] = "blalala"
+    redirect_to products_url
+  end
+
   # GET /products
   # GET /products.json
   def index
