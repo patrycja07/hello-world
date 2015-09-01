@@ -15,27 +15,28 @@
  */
  h3 {
 
-  color: white;
+  color:#D7D748;
  }
 
- 
- 
+ h1{
+  color:#D7D748;
+ }
 
-
-#logo
-
-{
-  background: #800080;
-  text-align: right;
-  padding: 15px;
-  font: small-caps 50px/50px "Tahoma", serif;
+ body{
+  margin:10px 50px 50px 50px;
+ background-image: url(green-1280.png);
+  background-size: cover;
 
 }
+
 #obraz
 {
 text-align: top;
-text-align: left;
+text-align: center;
 margin-left:33px;
+margin-right:33px;
+ padding: 15px;
+  font: small-caps 50px/50px "Tahoma", serif;
 }
 
 
@@ -59,7 +60,7 @@ margin-left:33px;
         display:block;
         text-decoration:none;
         font: small-caps 20px/20px "Tahoma", serif;
-        color:white;
+        color:silver;
         padding:5px 5px;
       }
 
@@ -84,7 +85,7 @@ margin-left:33px;
 
       /* wygląd elementu - a - dziecka elementu - li - będącego dzieckiem elementu - ol - po najechaniu kursorem myszki na element - li */
       ol > li:hover > a {
-        color:white;
+        color:silver;
         font-weight: bold;
       }
 
@@ -135,7 +136,7 @@ margin-left:33px;
 	border-bottom: 2px solid;
 	font: small-caps 40px/40px "Arial", serif;
 
-	color: white;
+	color: silver;
 	text-align: left;
 }
 
@@ -147,7 +148,7 @@ margin-left:33px;
  	color: red;
  	text-decoration: none;
 
- color: white;
+ color: silver;
  text-decoration: none;
  
 
